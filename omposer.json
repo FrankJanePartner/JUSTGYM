@@ -1,0 +1,7 @@
+{
+    "name": "your/project-name",
+    "require": {
+        "php": ">=7.2",
+        // Add your project dependencies here
+    }
+}
