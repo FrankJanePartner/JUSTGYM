@@ -1,0 +1,145 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block title %}home{% endblock %}
+{% block content %}
+    <main>
+        <section class="section-one">
+        <div class="div">
+            <span class="text">
+                <h1>GET STYLISH & FIT</h1>
+                <button><a href="">SHOP NOW &rarr;</a></button>
+            </span>
+            <span class="image">
+                <span></span>
+                <img src="{% static "store/image/gw5-removebg-preview 1.jpg" %}" alt="">
+            </span>
+        </div>
+        <span class="dot">
+            <i class="bi bi-record-fill  gray-dot"></i>
+            <i class="bi bi-record-fill blue-dot"></i>
+            <i class="bi bi-record-fill  gray-dot"></i>
+        </span>
+        </section>
+        <section class="section-two">
+            <div class="div">
+                {% for c in categories %}
+                <div class="item">
+                    <h3>{{ c.name|title }}</h3>
+                    {% with last_product=c.products.last %}
+                    {% if last_product %}
+                    <div class="border">
+                        <i class="bi bi-heart"></i>
+                        <img src="{{ last_product.image.url }}" alt="">
+                        <div class="dot">
+                            <i class="bi bi-record-fill"></i>
+                            <i class="bi bi-record-fill gray"></i>
+                            <i class="bi bi-record-fill gray"></i>
+                        </div>
+                        <div class="name">
+                            <h3>{{ last_product.name }}</h3>
+                            <div class="rating">
+                                <i class="bi bi-star-fill yellow"></i>
+                                <i class="bi bi-star-fill yellow"></i>
+                                <i class="bi bi-star-fill yellow"></i>
+                                <i class="bi bi-star-fill yellow"></i>
+                                <i class="bi bi-star-fill gray"></i>
+                            </div>
+                        </div>
+                        <div class="color-dot">
+                            <i class="ri-checkbox-blank-circle-fill bord"></i>
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                        </div>
+                        <div class="price">
+                            <p>&dollar;{{ last_product.price }}</p>
+                            <button><a href="#">View full details</a></button>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                </div>
+                {% endfor %}
+            </div>                          
+            <div class="dot">
+                <i class="bi bi-record-fill gray-dot"></i>
+                <i class="bi bi-record-fill blue-dot"></i>
+                <i class="bi bi-record-fill gray-dot"></i>
+            </div>
+            <div class="btn">
+                <button>
+                    <a href="">GO TO SHOP</a>
+                </button>
+            </div>
+        </section>
+        <section class="section-three">
+            <h1>NEW ARRIVALS</h1>
+            <div class="filter">
+                <span>
+                    {% for c in categories %}
+                    <a href="" >{{ c.name|title }}</a>
+                    {% endfor %}
+                </span>
+            </div>
+            <div class="explore">
+                <h3>Women's Best Sellers</h3>
+                <a href="">Explore all &rarr;</a>
+            </div>
+            <div class="filter-items">
+                <div class="item">
+                    <div class="border">
+                        <i class="bi bi-heart"></i>
+                        <img src="{{ last_product.image.url }}" alt="">
+                        <div class="dot">
+                            <i class="bi bi-record-fill blue-dot"></i>
+                            <i class="bi bi-record-fill gray-dot"></i>
+                            <i class="bi bi-record-fill gray-dot"></i>
+                        </div>
+                        <div class="name">
+                            <h3>{{ last_product.name }}</h3>
+                            <div class="rating">
+                                <i class="bi bi-star-fill yellow"></i>
+                                <i class="bi bi-star-fill yellow"></i>
+                                <i class="bi bi-star-fill yellow"></i>
+                                <i class="bi bi-star-fill yellow"></i>
+                                <i class="bi bi-star-fill gray"></i>
+                            </div>
+                        </div>
+                        <div class="color-dot">
+                            <i class="ri-checkbox-blank-circle-fill bord"></i>
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                            <i class="ri-checkbox-blank-circle-fill"></i>
+                        </div>
+                        <div class="price">
+                            <p>&dollar;{{ last_product.price }}</p>
+                            <button><a href="#">View full details</a></button>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="section-four">
+            <div class="image">
+                <span></span>
+                <img src="{% static "store/image/gw8-removebg-preview 1.jpg" %}" alt="" class="two">
+                <img src="{% static "store/image/gw7-removebg-preview 2.jpg" %}" alt="" class="three">
+            </div>
+            <div class="text">
+                <span>
+                    <h1>SIGN UP AND STAY UPDATED!</h1>
+                    <p>Sign up for the newsletter and discover the lastest arrivals and promotions.</p>
+                </span>
+                <form action="">
+                    <input type="text" placeholder="Enter email address" class="input">
+                    <span class="span">
+                        <input type="checkbox" name="" id="">
+                        <label for="">I consent to receive JUSTGYM newsletters via email. For further Information, please consult the Privacy Policy</label>
+                    </span>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+{% endblock  %}

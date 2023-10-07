@@ -1,0 +1,461 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block title %}Shop{% endblock %}
+{% block content %}
+<div class="container shop">
+    <section class="pageTitle">
+        <div class="titleDiv">
+            <h1>Checkout</h1>
+            <h1>
+                <a href="">HOME</a>
+                <span class="active">
+                    <span>&gt;</span>
+                    <a href="">SHOP</a>
+                </span>
+            </h1>
+        </div>
+    </section>
+    <section class="filter">
+        <div class="filterDiv">
+            <h1 class="h1">New (500)</h1>
+            <h1>
+                <span>
+                    <p>Hide Filters</p>
+                    <i class="bx bx-slider-alt"></i>
+                </span>
+                <span onclick="openSort()">
+                    <p>Sort By</p>
+                    <i class="bi bi-chevron-down"></i>
+                </span>
+            </h1>
+        </div>
+        <div class="floatSort" id="Sort">
+            <span class="border">
+                <p>SORT BY</p>
+                <i class="bi bi-x-lg" onclick="closePopup('Sort')"></i>
+            </span>
+            <span>
+                <input type="checkbox" name="" id="">
+                <label for="">Popular</label>
+            </span>
+            <span>
+                <input type="checkbox" name="" id="">
+                <label for="">Price: Low to High</label>
+            </span>
+            <span>
+                <input type="checkbox" name="" id="">
+                <label for="">Price: High to Low</label>
+            </span>
+            <span>
+                <input type="checkbox" name="" id="">
+                <label for="">Newest</label>
+            </span>
+            <button>Apply</button>
+        </div>
+    </section>
+    <div class="mainContainer">
+        <aside>
+            <ul>
+                <li>Shoes</li>
+                <li>Sport</li>
+                <li>Tops & T-Shirts</li>
+                <li>Hoodies & Sweatshirts</li>
+                <li>Jackets</li>
+                <li>Trousers & Tights</li>
+                <li>Shorts</li>
+                <li>Tracksuits</li>
+                <li>Jumpsuits & Rompers</li>
+                <li>Skirts & Dresses</li>
+                <li>Socks</li>
+                <li>Accessories & Equipments</li>
+            </ul>
+            <fieldset>
+                <div  onclick="dropdown()">
+                    <h4>Gender <i class="bi bi-chevron-down"></i></h4>
+                </div>
+                <ul id="dropList">
+                    <li>
+                        <input type="checkbox" name="" id="">
+                        <p>Men</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                        <p>Women</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                        <p>Unisex</p>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset onclick="dropdown1()">
+                <div>
+                    <h4>Shop By Price <i class="bi bi-chevron-down"></i></h4>
+                </div>
+                <ul id="dropList1">
+                    <li>
+                        <input type="checkbox" name="" id="">
+                        <p>Under <i class="bx bx-rupee"></i> 2 500.00</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="">
+                        <p><i class="bx bx-rupee"></i> 2 50.00 - <i class="bx bx-rupee"></i> 7 500.00</p>
+                    </li>
+                </ul>
+            </fieldset>
+        </aside>
+        <main>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/women.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/Rectangle 24g.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/forth.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/Rectangle 28gh.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/first.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/forth.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/women.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/Rectangle 24g.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/forth.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/Rectangle 28gh.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/first.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+                <div class="grid-item">
+                    <i class="ri-heart-line"></i>
+                    <img src="{% static 'store/image/forth.jpg' %}" alt="">
+                    <span class="dot">
+                        <i class="bi bi-record-fill blue-dot"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span class="text">
+                        <p>Swim Briefs</p>
+                        <span class="rating">
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill yellow"></i>
+                            <i class="bi bi-star-fill gray"></i>
+                        </span>
+                    </span>
+                    <span class="color">
+                        <i class="bi bi-record-fill border"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                        <i class="bi bi-record-fill"></i>
+                    </span>
+                    <span>
+                        <p>&dollar;50.00</p>
+                        <a href="">View Full details</a>
+                    </span>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+{% endblock %}
