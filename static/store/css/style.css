@@ -1,0 +1,4396 @@
+:root {
+    /* Blue Spectrum */
+    --blue-one: #00579F;
+    --blue-two: #669ECF;
+    --blue-three: #89A8DC;
+    --blue-four: #8CA6D3;
+    --blue-five: #8160FF;
+    --blue-six: #3C386E;
+    --blue-seven: #77A2C1;
+    --blue-eight: #101750;
+    --blue-nine: #0909DB;
+    --blue-ten: black;
+    --blue-eleven: #0052CC;
+
+    /* Green Spectrum */
+    --green-one: #69C900;
+    --green-two: #50AA50;
+    --green-three: #135435E5;
+    --green-four: #58AF58;
+    --green-five: #348658;
+    --green-six: #69C9D0;
+    --green-seven: #54D215;
+
+    /* Red Spectrum */
+    --red-one: #F94090;
+    --red-two: #EE1D52;
+    --red-three: #D50029;
+    --red-four: #D60907;
+    --red-five: #040606;
+    --red-six: #6C17136C;
+    --red-seven: #C70707;
+    --red-eight: #541215;
+    --red-nine: #9906B1;
+    --red-ten: #D82D7E;
+
+    /* Yellow Spectrum */
+    --yellow-one: #F2E03C;
+    --yellow-two: #FCA014;
+    --yellow-three: #FF5F00;
+    --yellow-four: #F9A000;
+    --yellow-five: #FF5E00;
+
+
+    /* Orange Spectrum */
+    --orange-one: #F65604;
+    --orange-two: #E84335;
+
+    /* Grey Spectrum */
+    --grey-one: #686868;
+    --grey-two: #D2D1D1;
+    --grey-three: #666666;
+    --grey-four: #3D3D3D;
+    --grey-five: #545454;
+    --grey-six: #8F9294;
+    --grey-seven: #9599A7;
+    --grey-eight: #979A95;
+    --grey-nine: #9784E4;
+    --grey-ten: #999EA0;
+    --grey-eleven: #9E9E9E;
+
+    /* Miscellaneous */
+    --misc-three: #ADADAD;
+    --misc-four: #EFEFED;
+    --misc-seven: #EBEDEA;
+    --misc-eight: #EDEFED;
+    --misc-nine: #F1F2F0;
+    --misc-ten: #F2FEFF;
+    --misc-fourteen: #DFDFDE;
+    --misc-fifteen: #E0E1DE;
+    --misc-sixteen: #E1E2E1;
+    --misc-seventeen: #E3E3E3;
+    --misc-eighteen: #E4E5E2;
+    --misc-nineteen: #E6E3E7;
+    --misc-twenty: #E9EAEC;
+    --misc-twenty-one: #ECF4FF;
+    --misc-twenty-two: #EEEEEE;
+    --misc-twenty-three: #F4F5F3;
+    --misc-twenty-four: #FAFDFD;
+}
+
+
+body{
+    min-width: 100dvw;
+    margin: 0px;
+    position: relative;
+    padding: 0px;
+}
+
+.container{
+    min-width: 100dvw;
+    margin: 0px;
+    height: auto; 
+}
+
+header{
+    min-width: 100vw;
+    margin: 0px;
+    min-height: 10vh;
+    position: fixed;
+    top: 0px;
+    z-index: 4;
+}
+
+section{
+    min-width: 100dvw;
+    margin-inline: auto;
+    padding: max(3vh, 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+header section .box{
+    min-width: 90dvw;
+    min-height: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue{
+    min-width: 90dvw;
+    margin: 0rem;
+    background-color: var(--blue-ten);
+    color: white;
+}
+
+header .blue .box select{
+    font-size: 0.9rem;
+    margin: 0px;
+    background-color: var(--blue-ten);
+    color: white;
+    border: none;
+}
+
+header .blue .box h1{
+    font-size: 0.9rem;
+    margin: 0px 30px;
+
+}
+
+header .blue a{
+    font-size: 0.9rem;
+    margin: 0px;
+    color: white;
+    text-decoration: none;
+}
+
+header .white{
+    background-color: white;
+}
+
+header .mobile-white{
+    display: none;
+}
+
+header .white .box div{
+    min-width: fit-content;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .white .box .logo img{
+    margin: 0px;
+    width: 45px;
+    margin-right: 10px;
+}
+
+header .white .box .logo h1{
+    margin: 0px;
+    color: var(--blue-ten);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header .white .box .search{
+    border: 1px solid black;
+    padding: 0.3%;
+    border-radius: 4px;
+    margin: 0px 30px;
+}
+
+header .white .box .search select{
+    margin: 0px;
+    border: none;
+    border-right: 1px solid black;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+header .white .box .search span{
+    width: 35ch;
+    margin: 0px;
+    border: none;
+    min-height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .white .box .search span input{
+    margin: 0px;
+    border: none;
+    width: 35ch;
+    padding: 7px 0px;
+}
+
+header .white .box .links{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .white .box .links a{
+    text-decoration: none;
+    color: grey;
+}
+
+header .white .box .links a i{
+    margin-left: 3px;
+    position: relative;
+}
+
+header .white .box .links a i sup{
+    padding: 5px 3px;
+    font-size: 0.5rem;
+    line-height: 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--blue-ten);
+    position: absolute;
+    right: -3px;
+    top: -3px;
+}
+
+header .white .box .btn{
+    margin: 0px;
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .white .box .btn button{
+    margin: 0px;
+    padding: max(0.5rem, 0.5rem) max(1rem, 1rem);
+    border: 1px solid black;
+    background-color: white;
+    color: var(--blue-ten);
+}
+
+header .white .box .btn .login{
+    border: none;
+    background-color: var(--blue-ten);
+    color: white;
+}
+
+footer{
+    width: 100%;
+    min-height: 60vh;
+    background-color: var(--blue-ten);
+    margin: 0px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    color: white;
+    /* bottom: 0px; */
+    padding: max(0.9rem, 0.4rem);
+    box-sizing: border-box;
+}
+
+footer section{
+    width: 90%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer section div{
+    width: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+footer .first{
+    border-bottom: 1px solid white;
+    padding-bottom: 8rem;
+    box-sizing: border-box;
+}
+
+footer section .logo{
+    margin-top: 20px;
+}
+
+
+footer section .logo h1{
+font-size: 30px;
+}
+
+footer section .logo img{
+    border: 3px solid white;
+    margin: 0px;
+    margin-right: 20px;
+    width: 3rem;
+}
+
+footer section .links{
+    flex-direction: column;
+}
+
+footer section .links a{
+    color: white;
+    text-decoration: none;
+    margin: 5px 0px;
+}
+
+footer .second{
+    height: fit-content;
+    padding: 0rem;
+    margin: 0px;
+    margin-top: 2rem;
+    line-height: 1rem;
+    font-size: 0.7rem;
+    position: relative;
+}
+
+footer section .social{
+    min-width: 18%;
+    box-sizing: border-box;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    position: relative;
+    background-color: aquamarine;
+}
+
+footer section .social a{
+    min-width: 4rem;
+    min-height: 2.5rem;
+    position: absolute;
+    font-size: 1.5rem;
+    color: var(--blue-ten);
+}
+
+footer section .social a:nth-child(3n){
+    right: 0%;
+}
+
+footer section .social a:nth-child(3n + 1){
+    left: 0%;
+}
+
+footer section .social a:nth-child(3n + 2){
+    right: 35%;
+}
+
+:is(footer section .social a, footer section .payment a){
+    border-radius: 0.3rem;
+    background-color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: grid;
+    place-content: center;
+}
+
+footer section .payment{
+    min-width: 27%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    background-color: brown;
+    position: relative;
+}
+
+footer section .payment a{
+    position: absolute;
+    min-width: 4rem;
+    min-height: 2.3rem;
+}
+
+
+footer section .payment a svg{
+    padding: 0px;
+    margin: 0px;
+}
+
+footer section .payment a:nth-child(4n){
+    right: 0%;
+}
+
+footer section .payment a:nth-child(4n + 1){
+    left: 0%;
+}
+
+footer section .payment a:nth-child(4n + 2){
+    left: 27.5%;
+}
+
+footer section .payment a:nth-child(4n + 3){
+    right: 27.5%;
+}
+
+/* home page */
+.home main{
+    min-width: 100%;
+    margin: 0px;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home main section{
+    min-width: 90%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+}
+
+.home main section .div{
+    min-width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home main .section-one{
+    height: 40rem;
+    margin: 0px 0px 4rem;
+}
+
+.home main .section-one .div{
+    height: 35rem;
+    background-color: var(--blue-ten);
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.home main section .div span{
+    height: 100%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.home main section .div span.text{
+    min-width: 20%;
+    margin-left: 5rem;
+}
+
+.home main section .div span h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    margin: 0px;
+    margin-bottom: 2rem;
+}
+
+.home main section .div span button{
+    border: none;
+    color: black;
+    background: white;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+}
+
+.home main section .div span button a{
+    text-decoration: none;
+    color: var(--blue-ten);
+}
+
+.home main img{
+    min-width: 400px;
+    margin: 0px;
+}
+
+.home main section .div span.image{
+    min-width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.home main section .div span.image span{
+    min-width: 80%;
+    height: 85%;
+    background-color: white;
+    border-radius: 15rem;
+    position: absolute;
+    top: 4rem;
+    right: 5rem;
+}
+
+.home main section .div span.image img{
+    min-width: 110%;
+    height: 90%;
+    position: absolute;
+    bottom: 0rem;
+    right: 0.1rem;
+}
+
+.home main .section-one .dot i.blue-dot{
+    color: var(--blue-ten);
+}
+
+.home main .section-one .dot i.gray-dot{
+    color: var(--grey-eight);
+}
+
+.home main .section-two{
+    height: auto;
+    margin: 2rem;
+}
+
+.home main .section-two .div {
+    min-width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.home main .section-two .div .item{
+    min-width: 31%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home main .section-two .div .item .border{
+    min-width: 100%;
+    margin: 0px;
+    border: 1px solid black;
+    position: relative;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home main .section-two .div .item .border .bi-heart{
+    position: absolute;
+    font-size: 1.3rem;
+    right: 2rem;
+    top: 2rem;
+}
+
+.home main .section-two .div .item .border img{
+    min-width: 97%;
+    height: 27rem;   
+}
+
+.home main .section-two .div .item .border .dot{
+    position: absolute;
+    background-color: white;
+    color: var(--blue-ten);
+    border-radius: 2rem;
+    bottom: 12rem;
+}
+
+.home main .section-two .div .item .border .name{
+    min-width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home main .section-two .div .item .border .name .rating .yellow{
+    color: var(--yellow-two);
+}
+
+.home main .section-two .div .item .border .name .rating .gray{
+    color: gray;
+}
+
+.home main .section-two .div .item .border .color-dot{
+    min-width: 96%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.home main .section-two .div .item .border .color-dot .bord{
+    margin: 0px;
+    padding: 0.05px;
+    margin-right: 1px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.home main .section-two .div .item .border .price{
+    min-width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.home main .section-two .div .item .border .price button{
+    background-color: var(--blue-ten);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.2rem;
+}
+
+.home main .section-two .div .item .border .price button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.home main .section-two .dot{
+margin-bottom: 3rem;
+}
+
+.home main .section-two .dot i.blue-dot{
+    color: var(--blue-ten);
+}
+
+.home main .section-two .dot i.gray-dot{
+    color: var(--grey-eight);
+}
+
+.home main .section-two .btn button{
+    background-color: var(--blue-ten);
+    border: none;
+    padding: 1rem 5rem;
+    border-radius: 0.5rem;
+}
+
+.home main .section-two .btn button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.5rem;
+    margin: 0px;
+    font-weight: 100;
+}
+
+.home main .section-three h1{
+    font-size: 3rem;
+}
+
+
+.home main .section-three .filter{
+    min-width: 30%;
+    height: 4rem;
+    border-radius: 0.5rem;
+    background-color: var(--blue-ten);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home main .section-three .filter span{
+    min-width: 90%;
+    height: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home main .section-three .filter span a{
+    color: white;
+    text-decoration: none;
+}
+
+.home main .section-three .filter span a.active{
+    background-color: white;
+    color: var(--blue-ten);
+    padding: 0.7rem 1.7rem;
+    border-radius: 0.4rem;
+}
+
+.home main .section-three .explore{
+    min-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home main .section-three .explore h3{
+    font-size: 1.6rem;
+}
+
+.home main .section-three .explore a{
+    text-decoration: none;
+    color: var(--blue-ten);
+}
+
+
+.home main .section-three .filter-items{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home main .section-three .filter-items .item{
+    min-width: 32.5%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
+    -webkit-box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
+    -moz-box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
+}
+
+.home main .section-three .filter-items .item .border{
+    min-width: 100%;
+    margin: 0px;
+    position: relative;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home main .section-three .filter-items .item .border .bi-heart{
+    position: absolute;
+    font-size: 1.3rem;
+    right: 2rem;
+    top: 2rem;
+}
+
+.home main .section-three .filter-items .item .border img{
+    min-width: 97%;
+    height: 27rem;   
+}
+
+.home main .section-three .filter-items .item .border .dot{
+    position: absolute;
+    background-color: white;
+    color: var(--blue-ten);
+    border-radius: 2rem;
+    bottom: 12rem;
+}
+
+.home main .section-three .filter-items .item .border .dot i.blue-dot{
+    color: var(--blue-ten);
+}
+
+.home main .section-three .filter-items .item .border .dot i.gray-dot{
+    color: var(--grey-eight);
+}
+
+.home main .section-three .filter-items .item .border .name{
+    min-width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home main .section-three .filter-items .item .border .name .rating .yellow{
+    color: var(--yellow-two);
+}
+
+.home main .section-three .filter-items .item .border .name .rating .gray{
+    color: gray;
+}
+
+.home main .section-three .filter-items .item .border .color-dot{
+    min-width: 96%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.home main .section-three .filter-items .item .border .color-dot .bord{
+    margin: 0px;
+    padding: 0.05px;
+    margin-right: 1px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.home main .section-three .filter-items .item .border .price{
+    min-width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.home main .section-three .filter-items .item .border .price button{
+    background-color: var(--blue-ten);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.2rem;
+}
+
+.home main .section-three .filter-items .item .border .price button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.home main .section-three .filter-items .item .border .dot{
+    position: absolute;
+    background-color: white;
+    color: var(--blue-ten);
+    border-radius: 2rem;
+    bottom: 5rem;
+}
+
+.home main .section-three .filter-items .item .border .name{
+    min-width: 96%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home main .section-three .filter-items .item .border .name .rating .yellow{
+    color: var(--yellow-two);
+}
+
+.home main .section-three .filter-items .item .border .name .rating .gray{
+    color: gray;
+}
+
+.home main .section-three .filter-items .item .border .color-dot{
+    min-width: 96%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.home main .section-three .filter-items .item .border .color-dot .bord{
+    margin: 0px;
+    padding: 0.05px;
+    margin-right: 1px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.home main .section-three .filter-items .item .border .price{
+    min-width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.home main .section-three .filter-items .item .border .price button{
+    background-color: var(--blue-ten);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 0.2rem;
+}
+
+.home main .section-three .filter-items .item .border .price button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+
+.home main .section-four{
+    margin: 2rem 0px;
+    min-width: 100%;
+    height: 35rem;
+    background-color: var(--blue-ten);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.home main .section-four .image{
+    min-width: 70%;
+    height: 110%;
+    margin: 0px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.home main .section-four .image span{
+    min-width: 65rem;
+    height: 45rem;
+    background-color: white;
+    position: absolute;
+    left: -10rem;
+    top: 0.7rem;
+    -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 53% 65%, 7% 95%, 22% 57%, 2% 35%, 39% 35%);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 53% 65%, 7% 95%, 22% 57%, 2% 35%, 39% 35%);
+}
+
+
+.home main .section-four .image img{
+    min-width: 35rem;
+    height: 95%;
+    position: absolute;
+    z-index: 2;
+    top: 1.5rem;
+    margin: 0px;
+}
+
+.home main .section-four .image img:nth-child(2n){
+    left: -1.5rem;
+}
+
+
+.home main .section-four .image img:nth-child(2n+1){
+    left:30%;
+}
+.home main .section-four .text{
+    min-width: 35%;
+    margin-right: 5rem;
+    height: 20rem;
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.home main .section-four .text .input{
+    min-width: 100%;
+    padding: 0.7rem;
+    margin: 0.7rem 0rem;
+}
+
+.home main .section-four .text span{
+    min-width: 50%;
+}
+
+.home main .section-four .text span h1{
+    font-size: 2rem;
+    font-family: 100;
+    margin: 0px;
+}
+
+.home main .section-four .text span p{
+    font-size: 1.3rem;
+    margin: 1rem 0px;
+}
+
+.home main .section-four .text .span{
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 1rem 0rem;
+}
+
+.home main .section-four .text .span input{
+    margin-right: 10px;
+}
+
+.home main .section-four .text .span label{
+    font-size: 0.9rem;
+}
+
+.home main .section-four .text button{
+    min-width: 100%;
+    padding: 0.7rem;
+    margin: 0.7rem 0rem;
+    background-color: var(--green-six);
+    border: none;
+    color: var(--blue-ten);
+}
+
+/* policy page */
+.policy main{
+    min-width: 100%;
+    margin: 0px;
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.policy main section{
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+.policy main section h1{
+    font-size: 2rem;
+    margin: 0.3rem 0rem;
+}
+
+.policy main section h2{
+    font-size: 1.7rem;
+    margin: 0.1rem 0rem;
+}
+
+.policy main section h3{
+    font-size: 1.5rem;
+    margin: 0.1rem 0rem;
+}
+
+.policy main section ul{
+    padding: 0.5rem;
+}
+
+.policy main section ul li{
+    margin: 0px;
+    list-style: none;
+}
+
+
+.policy main section ul li i{
+    color: gray;
+    margin-right: 10px;
+}
+
+/* about us page */
+
+.about main{
+    min-width: 100%;
+    margin: 0px;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about main section{
+    min-width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.about main section img{
+    min-width: 99%;
+    margin: 2rem 0rem;
+}
+
+.about main section h1{
+    font-size: 2rem;
+    margin: 0.3rem 0rem;
+}
+
+.about main section h2{
+    font-size: 1.7rem;
+    margin: 0rem;
+}
+
+.about main section p{
+    margin: 0rem;
+}
+
+.about main section ul{
+    padding: 0.5rem;
+}
+
+.about main section ul li{
+    margin: 1rem 0rem;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.about main section ul li h2{
+    margin-right: 10px;
+    min-width: 100%;
+}
+
+.about main section .div{
+    min-width: 100%;
+    height: 32.5rem;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about main section .div .frame{
+    min-width: 45%;
+}
+
+.about main section .div form{
+    min-width: 45%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about main section .div form h3{
+    font-size: 1.5rem;
+    margin: 0rem;
+}
+
+.about main section .div form p{
+    text-align: justify;
+    margin: 0rem;
+}
+
+.about main section .div form span{
+    min-width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about main section .div form span input{
+    min-width: 45%;
+    padding: 0.5rem;
+    margin: 0px;
+}
+
+
+.about main section .div form .subject{
+    min-width: 96%;
+    padding: 0.5rem;
+}
+
+.about main section .div form button{
+    background-color: var(--blue-ten);
+    color: white;
+    border: none;
+    padding: 0.7rem 1.5rem;
+
+}
+
+/* Error page */
+.error main section{
+    flex-direction: column;
+    position: relative;
+    margin: 10rem 0rem;
+}
+
+.error main section img{
+    min-width: 60%;
+}
+
+.error main section h1{
+    color: var(--blue-eight);
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    z-index: 2;
+    bottom: 6rem;
+    left: 26rem;
+}
+
+
+.error main section button{
+    background-color: var(--blue-ten);
+    border: none;
+    padding: 0.9rem 3rem;
+    border-radius: 0.3rem;
+}
+
+.error main section button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* order complete page */
+.order main{
+    min-width: 100%;
+    margin: 12rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order main section{
+    min-width: 97%;
+    margin: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order main section .div{
+    min-width: 50%;
+    height: 23rem;
+    margin: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 0.2rem dotted gray;
+}
+
+.order main section .div i{
+    font-size: 5.2rem;
+    background-color: var(--blue-ten);
+    color: white;
+    border-radius: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 3rem;
+    min-width: 3rem;
+    position: absolute;
+    top: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order main section .div h1{
+    font-size: 2.5rem;
+}
+
+.order main section .div p{
+    text-align: center;
+    line-height: 2rem;
+}
+
+.order main section .div button{
+    border: none;
+    background-color: var(--blue-ten);
+    padding: 0.7rem 2rem;
+}
+
+.order main section .div button a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Styling for the popup container */
+.popup-container {
+    display: none;
+    position: absolute;
+    top: -7rem;
+    left: 15rem;
+    min-width: 70%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the popup content */
+.popup-content {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Close button styling */
+.close-button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.popup-content h2{
+    margin-top: 4rem;
+    font-weight: 100;
+}
+
+.popup-content .signup-btn{
+    display: block;
+    margin: 0.5rem 0rem;
+    padding: 0.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    min-width: 50%;
+    box-sizing: border-box;
+}
+
+.popup-content .signup-btn i{
+    font-size: 1.2rem;
+    margin: 0;
+    margin-right: 1rem;
+}
+
+.popup-content .signup-btn i.bi-facebook{
+    color: var(--blue-one);
+}
+
+.or{
+    height: 0.1rem;
+    min-width: 50%;
+    background-color: #040606;
+    margin: 1rem 0rem;
+    position: relative;
+}
+
+.or h4{
+    font-weight: 100;
+    padding: 0.1rem;
+    position: absolute;
+    right: 50%;
+    bottom: -7px;
+    margin: 0rem;
+    background-color: white;
+}
+
+.p{
+    margin: 0px;
+    margin-bottom: 1rem;
+    font-weight: 100;
+}
+
+.input{
+    min-width: 29rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0px;
+    margin-bottom: 0.3rem;
+    color: gray;
+}
+
+.large input{
+    min-width: 97%;
+    padding: 0.5rem;
+    margin-top: 3px;
+    border-radius: 5px;
+}
+
+.large span.password{
+    min-width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox{
+    margin: 0.5rem 0rem;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.checkbox p{
+    margin: 0px;
+    text-align: start;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.large span.number{
+    min-width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 0.5rem;
+}
+
+.large span.number select{
+    min-width: 10%;
+    height: 100%;
+    margin: 0px;
+}
+
+.large span.number input{
+    min-width: 80%;
+    border: none;
+}
+
+.signbutton{
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: var(--blue-ten);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.popup-content form .link a{
+    color: var(--blue-one);
+}
+
+.popup-content form{
+    margin-bottom: 5rem;
+}
+
+#signupSucessPopup{
+    height: auto;
+}
+
+#signupSucessPopup .popup-content{
+    height: 40rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#signupSucessPopup .popup-content .div{
+    min-width: 30%;
+    margin: 0rem;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#signupSucessPopup .popup-content .div i{
+    font-size: 5.2rem;
+    background-color: var(--blue-ten);
+    color: white;
+    border-radius: 100%;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 3rem;
+    min-width: 3rem;
+    position: absolute;
+    top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signupSucessPopup .popup-content .div h1{
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 0rem;
+    line-height: 2.1rem;
+}
+
+#signupSucessPopup .popup-content .div p{
+    text-align: center;
+    color: gray;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.pageTitle{
+    min-width: 100%;
+    height: 4rem;
+    margin: 0px;
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--misc-twenty-one);
+}
+
+.pageTitle .titleDiv{
+    min-width: 90%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageTitle .titleDiv h1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    color: rgb(113, 113, 113);
+}
+
+.pageTitle .titleDiv h1 a{
+    color: rgb(113, 113, 113);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+
+.pageTitle .titleDiv h1 span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageTitle .titleDiv h1 span.active a{
+    color: var(--blue-ten);
+}
+
+/* shop page */
+
+.shop .filter{
+    min-width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.shop .filter .filterDiv{
+    min-width: 90%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop .filter .filterDiv h1{
+    min-width: 25%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.shop .filter .filterDiv .h1{
+    align-items: flex-start;
+    font-size: 1.2rem;
+}
+
+.shop .filter .filterDiv h1 span{
+    min-width: 50%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.shop .filter .filterDiv h1 span p,
+.shop .filter .filterDiv h1 span i{
+    margin: 0px;
+}
+
+.shop .floatSort{
+    min-width: 25rem;
+    height: auto;
+    padding: 1rem 0.5rem 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 1px 1px 20px 1px black;
+    position: absolute;
+    top: -4px;
+    right: 5%;
+    display: none;
+}
+
+.shop .floatSort span{
+    min-width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(82, 81, 81);
+    font-size: 1.2rem;
+    margin: 1rem auto;
+}
+
+.shop .floatSort span.border{
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+
+.shop .floatSort span input{
+    min-width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+.shop .floatSort button{
+    min-width: 90%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    margin-top: 4rem;
+    background-color: var(--blue-ten);
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.shop .mainContainer{
+    min-width: 90%;
+    height: auto;
+    margin: 1rem auto 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop .mainContainer aside{
+    min-width: 25%;
+    margin: 0px;
+    /* background-color: #0052CC; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.shop .mainContainer aside ul{
+    padding: 0rem;
+}
+
+.shop .mainContainer aside ul li{
+    list-style: none;
+    padding: 0.3rem 2.8rem;
+    border: 1px solid gray;
+    margin: 0rem 0rem 1rem;
+}
+
+.shop .mainContainer aside fieldset{
+    min-width: 90%;
+    height: auto;
+    margin: 1rem 0rem;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+}
+
+.shop .mainContainer aside fieldset div{
+    min-width: 100%;
+}
+
+.shop .mainContainer aside fieldset div h4{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.shop .mainContainer aside fieldset ul{
+    border-top: 1px solid var(--grey-three);
+    min-width: 100%;
+    margin: 0px;
+    padding: 0rem;
+    display: none;
+}
+
+.shop .mainContainer aside fieldset ul li{
+    padding: 0px;
+    min-width: 100%;
+    margin: 0.1rem 0rem;
+    border: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.shop .mainContainer aside fieldset ul li input{
+    min-width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.shop .mainContainer aside fieldset ul li p{
+    font-size: 1rem;
+}
+
+.shop .mainContainer main{
+    min-width: 75%;
+    margin: 0px;
+}
+
+.shop .mainContainer main .grid-container{
+    padding: 1rem;
+    --min-column-size: 30%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+}
+
+.shop .mainContainer main .grid-container .grid-item{
+    border: 1px solid black;
+    height: auto;
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.shop .mainContainer main .grid-container .grid-item img{
+    min-width: 100%;
+    height: 20rem;
+}
+
+.shop .mainContainer main .grid-container .grid-item .ri-heart-line{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+}
+
+.shop .mainContainer main .grid-container .grid-item span{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+.shop .mainContainer main .grid-container .grid-item span.dot{
+    justify-content: center;
+}
+
+.shop .mainContainer main .grid-container .grid-item .text span{
+    min-width: 40%;
+}
+
+.shop .mainContainer main .grid-container .grid-item .text span.rating .yellow{
+    color: var(--yellow-four);
+}
+
+.shop .mainContainer main .grid-container .grid-item span.color{
+    justify-content: start;
+}
+
+.shop .mainContainer main .grid-container .grid-item span i{
+    color: gray;
+}
+
+.shop .mainContainer main .grid-container .grid-item span .blue-dot{
+    color: var(--blue-ten);
+}
+
+.shop .mainContainer main .grid-container .grid-item span a{
+    background-color: var(--blue-ten);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.7rem;
+}
+
+
+/* product detail page */
+.detail .mainContainer{
+    min-width: 80%;
+    margin-bottom: 20rem;
+}
+
+.detail .mainContainer .one{
+    min-width: 50%;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail .mainContainer .one .images{
+    min-width: 90%;
+    margin: auto 1rem;
+}
+
+.detail .mainContainer .one .images .img1{
+    min-width: 100%;
+    height: 23rem;
+    margin: 0px;
+}
+
+.detail .mainContainer .one .images .small{
+    min-width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detail .mainContainer .one .images .small img{
+    min-width: 9rem;
+    height: 5rem;
+}
+
+.detail .mainContainer .two{
+    min-width: 45%;
+}
+
+.detail .mainContainer .two h3{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.detail .mainContainer .two div{
+    min-width: 100%;
+    display: flex;
+    text-align: justify;
+}
+
+.detail .mainContainer .two p{
+    min-width: 100%;
+    display: flex;
+    text-align: justify;
+}
+
+.detail .mainContainer .two div.review .rating{
+    margin-right: 1rem;
+}
+
+.detail .mainContainer .two div.review .rating .yellow{
+    color: var(--yellow-four);
+}
+
+.detail .mainContainer .two div.review a{
+    color: gray;
+}
+
+.detail .mainContainer .two div.price{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.detail .mainContainer .two div.price span{
+    line-height: 0px;
+}
+
+.detail .mainContainer .two div.price span h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.detail .mainContainer .two div.price span p{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.detail .mainContainer .two div.price span.unit{
+    min-width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 0.4rem;
+    overflow: hidden;
+}
+
+.detail .mainContainer .two div.price span.unit input{
+    min-width: 2rem;
+    height: 100%;
+    font-size: 20px;
+    padding: auto;
+    margin: 0px;
+    border: none;
+}
+
+.detail .mainContainer .two div.price span.unit select{
+    min-width: 4rem;
+    height: 100%;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+.detail .mainContainer .two div.price button{
+    border: none;
+    background-color: var(--blue-ten);
+    padding: 0.6rem 1.3rem;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.detail .mainContainer .two div.tab-heading{
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-top: 3rem;
+}
+
+.detail .mainContainer .two div.tab-heading h4{
+    padding: 1rem 2rem 1rem;
+    margin: 0px;
+}
+
+.detail .mainContainer .two div.tab-heading h4.active{
+    border-bottom: 3px solid var(--blue-ten);
+}
+
+.detail .mainContainer .two .tab-text{
+    padding: 1rem 0.5rem;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail .mainContainer .two .tab-text span,
+.detail .mainContainer .two .tab-text p{
+    margin:  0rem  0rem 0.5rem;
+}
+
+.detail .mainContainer .two .tab-text p{
+    margin-bottom: 1.9rem;
+}
+
+.detail .mainContainer .two .link{
+    border: none;
+    text-decoration: none;
+    background-color: var(--blue-ten);
+    padding: 0.8rem 1.9rem;
+    color: white;
+    margin: 0rem;
+    border-radius: 0.3rem;
+}
+
+.checkout main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout main .main{
+    min-width: 70%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkout main .main form{
+    min-width: 57%;
+    margin-bottom: 10rem;
+}
+
+.checkout main .main form .div{
+    min-width: 100%;
+    margin: 1.5rem 0rem;
+}
+
+
+.checkout main .main form .div h1{
+    font-size: 1.4rem;
+    margin: 5px 0px;
+}
+
+.checkout main .main form .div p{
+    min-width: 97%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: gray;
+    margin: 5px 0px 20px;
+}
+
+.checkout main .main form .div .input-container{
+    min-width: 97%;
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkout main .main form .div .input-container .detail-form{
+    min-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0rem;
+    padding-right: 0.5rem;
+}
+
+.checkout main .main form .div .input-container .detail-form .input-item{
+    min-width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+    margin-bottom: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.checkout main .main form .div .input-container .detail-form .input-item input{
+    min-width: 95%;
+    padding: 0.5rem;
+    background-color: rgb(241, 240, 240);
+    border: 0.1px solid gray;
+}
+
+.checkout main .main form .div .input-container .detail-form .checkitem{
+    min-width: 93%;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(241, 240, 240);
+    border: 0.1px solid gray;
+    padding: 0.5rem;
+}
+
+.checkout main .main form .div .input-container .detail-form .checkitem input{
+    flex-direction: row;
+    padding: 0rem;
+    min-width: auto;
+    background-color: rgb(241, 240, 240);
+    border: 0.1px solid gray;
+}
+
+.checkout main .main form .div .input-container .radio-item{
+    min-width: 93%;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(241, 240, 240);
+    border: 0.1px solid gray;
+    padding: 0.5rem;
+}
+
+.checkout main .main form .div .second-input-container{
+    flex-direction: column;
+}
+
+.checkout main .main form .div .second-input-container .radio-item{
+    min-width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+}
+
+.checkout main .main form .div .second-input-container .radio-item span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkout main .main form .div .second-input-container .radio-item .price-span{
+    display: flex;
+    min-width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.checkout main .main form .div .second-input-container .radio-item .price-span p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+.checkout main .main form .div .second-input-container .radio-item .price-span p span{
+    color: #348658;
+    margin-right: 0.7rem;
+}
+
+.checkout main .main form .div .second-input-container .radio-item #radio{
+    margin-right: 0.7rem;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item{
+    flex-direction: column;
+    min-width: 95%;
+    height: auto;
+    justify-content: space-between;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item div{
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item .card{
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item .card span{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item .card span input{
+    min-width: 90%;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item .card input{
+    padding: 0.3rem;
+    background-color: rgb(241, 240, 240);
+    border: 0.1px solid gray;
+    box-sizing: border-box;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item .card .card-number #card-number{
+    min-width: 97%;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item .card-info{
+    margin-top: 2rem;
+}
+
+.checkout main .main form .div .second-input-container .second-radio-item .card-info span{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.checkout main .main form .div textarea{
+    background-color: rgb(241, 240, 240);
+    border: 0.1px solid gray;
+}
+
+.checkout main .main form .div .agree{
+    background-color: rgb(241, 240, 240);
+    border: 0.1px solid gray;
+    padding: 0.5rem 0.1rem;
+    margin: 0rem;
+    margin-top: 0.5rem;
+    display: flex;
+}
+
+.checkout main .main form .div .agree input{
+    background-color: rgb(241, 240, 240);
+    border: 0.1px solid gray;
+}
+
+.checkout main .main form .btn{
+    padding: 0.7rem 2rem;
+    border: none;
+    background-color: var(--blue-ten);
+    color: white;
+    margin: 2rem 0rem;
+}
+
+.checkout main .main .section{
+    min-width: 40%;
+    border: 1px solid gray;
+    padding: 1rem;
+}
+
+.checkout main .main .section .orderSummary{
+    min-width: 100%;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+.checkout main .main .section .orderSummary #p{
+    font-size: 0.72rem;
+    color: gray;
+}
+
+.checkout main .main .section .orderSummary .div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0rem;
+    position: relative;
+}
+
+.checkout main .main .section .orderSummary .div #span{
+    flex-direction: column;
+    width: 70%;
+}
+
+.checkout main .main .section .orderSummary .div #span h6{
+    font-size: 1rem;
+    margin: 0rem;
+    line-height: 0rem;
+}
+
+.checkout main .main .section .orderSummary .div #span #di{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.checkout main .main .section .orderSummary .div #span .rating{
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.checkout main .main .section .orderSummary .div #price h4{
+    font-size: 1rem;
+    line-height: 0rem;
+}
+
+.checkout main .main .section .orderSummary .div #price p{
+    color: gray;
+    font-size: 0.7rem;
+    line-height: 0rem;
+    text-decoration: line-through;
+}
+
+.checkout main .main .section .orderSummary .div #span .rating .yellow{
+    color: var(--yellow-four);
+    margin: 0rem;
+}
+
+.checkout main .main .section .orderSummary .div img{
+    width: 4rem;
+    height: 3rem;
+}
+
+.checkout main .main .section .orderSummary .div a{
+    text-decoration: none;
+    color: gray;
+}
+
+.checkout main .main .section .orderSummary .div #div{
+    position: absolute;
+    right: 1rem;
+    bottom: 0rem;
+}
+
+.checkout main .main .section .orderSummary .div #div span{
+    display: flex;
+    width: 6rem;
+    border-radius: 0.2rem;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.checkout main .main .section .orderSummary .div #div span input,
+.checkout main .main .section .orderSummary .div #div span select{
+    border: none;
+    width: 2.9rem;
+    height: 1.5rem;
+    box-sizing: border-box;
+}
+
+.checkout main .main .section .orderSummary .div #div span input{
+    color: gray;
+    border-right: 1px solid black;
+}
+
+.checkout main .main .section .orderSummary .total p{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+}
+
+.checkout main .main .section .orderSummary .total .coupon{
+    display: flex;
+    width: 100%;
+    height: 2rem;
+    padding: 0.2rem;
+    border: 1px solid black;
+    justify-content: space-between;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+}
+
+
+.checkout main .main .section .orderSummary .total .coupon input,
+.checkout main .main .section .orderSummary .total .coupon button{
+    border: none;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.checkout main .main .section .orderSummary .totalPrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    body{
+        min-width: 100%;
+    }
+    
+    .container{
+        min-width: 90%;
+        margin: 0px;
+        height: auto; 
+    }
+    
+    header{
+        min-width: 100%;
+    }
+    
+    section{
+        min-width: 100%;
+        padding: max(3vh, 1rem);
+    }
+    
+    header section .box{
+        min-width: 90%;
+        min-height: 100%;
+        margin: 0px;
+    }
+    
+    .blue{
+        min-width: 90%;
+    }
+    
+    header .blue .box select{
+        font-size: 0.9rem;
+        margin: 0px;
+        background-color: var(--blue-ten);
+        color: white;
+        border: none;
+    }
+    
+    header .blue .box h1{
+        font-size: 0.9rem;
+        margin: 0px 30px;
+    
+    }
+    
+    header .blue a{
+        font-size: 0.9rem;
+        margin: 0px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    header .white .box div{
+        min-width: fit-content;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header .white .box .logo img{
+        margin: 0px;
+        width: 45px;
+        margin-right: 10px;
+    }
+    
+    header .white .box .logo h1{
+        margin: 0px;
+        color: var(--blue-ten);
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    
+    header .white .box .search{
+        border: 1px solid black;
+        padding: 0.3%;
+        border-radius: 4px;
+        margin: 0px 30px;
+    }
+    
+    header .white .box .search select{
+        margin: 0px;
+        border: none;
+        border-right: 1px solid black;
+        padding-right: 10px;
+        margin-right: 10px;
+    }
+    
+    header .white .box .search span{
+        width: 35ch;
+        margin: 0px;
+        border: none;
+        min-height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .white .box .search span input{
+        margin: 0px;
+        border: none;
+        width: 35ch;
+        padding: 7px 0px;
+    }
+    
+    header .white .box .links{
+        width: 12%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .white .box .links a{
+        text-decoration: none;
+        color: grey;
+    }
+    
+    header .white .box .links a i{
+        margin-left: 3px;
+        position: relative;
+    }
+    
+    header .white .box .links a i sup{
+        padding: 5px 3px;
+        font-size: 0.5rem;
+        line-height: 0px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        background-color: var(--blue-ten);
+        position: absolute;
+        right: -3px;
+        top: -3px;
+    }
+    
+    header .white .box .btn{
+        margin: 0px;
+        width: 17%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    header .white .box .btn button{
+        margin: 0px;
+        padding: max(0.5rem, 0.5rem) max(1rem, 1rem);
+        border: 1px solid black;
+        background-color: white;
+        color: var(--blue-ten);
+    }
+    
+    header .white .box .btn .login{
+        border: none;
+        background-color: var(--blue-ten);
+        color: white;
+    }
+    
+    footer{
+        width: 100%;
+        min-height: 60vh;
+        background-color: var(--blue-ten);
+        margin: 0px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        color: white;
+        /* bottom: 0px; */
+        padding: max(0.9rem, 0.4rem);
+        box-sizing: border-box;
+    }
+    
+    footer section{
+        width: 90%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    footer section div{
+        width: fit-content;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+    footer .first{
+        border-bottom: 1px solid white;
+        padding-bottom: 8rem;
+        box-sizing: border-box;
+    }
+    
+    footer section .logo{
+        margin-top: 20px;
+    }
+    
+    
+    footer section .logo h1{
+    font-size: 30px;
+    }
+    
+    footer section .logo img{
+        border: 3px solid white;
+        margin: 0px;
+        margin-right: 20px;
+        width: 3rem;
+    }
+    
+    footer section .links{
+        flex-direction: column;
+    }
+    
+    footer section .links a{
+        color: white;
+        text-decoration: none;
+        margin: 5px 0px;
+    }
+    
+    footer .second{
+        height: fit-content;
+        padding: 0rem;
+        margin: 0px;
+        margin-top: 2rem;
+        line-height: 1rem;
+        font-size: 0.7rem;
+        position: relative;
+    }
+    
+    footer section .social{
+        min-width: 18%;
+        box-sizing: border-box;
+        height: fit-content;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        position: relative;
+        background-color: aquamarine;
+    }
+    
+    footer section .social a{
+        min-width: 4rem;
+        min-height: 2.5rem;
+        position: absolute;
+        font-size: 1.5rem;
+        color: var(--blue-ten);
+    }
+    
+    footer section .social a:nth-child(3n){
+        right: 0%;
+    }
+    
+    footer section .social a:nth-child(3n + 1){
+        left: 0%;
+    }
+    
+    footer section .social a:nth-child(3n + 2){
+        right: 35%;
+    }
+    
+    :is(footer section .social a, footer section .payment a){
+        border-radius: 0.3rem;
+        background-color: white;
+        box-sizing: border-box;
+        text-decoration: none;
+        display: grid;
+        place-content: center;
+    }
+    
+    footer section .payment{
+        min-width: 27%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px;
+        background-color: brown;
+        position: relative;
+    }
+    
+    footer section .payment a{
+        position: absolute;
+        min-width: 4rem;
+        min-height: 2.3rem;
+    }
+    
+    
+    footer section .payment a svg{
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    footer section .payment a:nth-child(4n){
+        right: 0%;
+    }
+    
+    footer section .payment a:nth-child(4n + 1){
+        left: 0%;
+    }
+    
+    footer section .payment a:nth-child(4n + 2){
+        left: 27.5%;
+    }
+    
+    footer section .payment a:nth-child(4n + 3){
+        right: 27.5%;
+    }
+    
+    /* home page */
+    .home main{
+        min-width: 100%;
+        margin: 0px;
+        margin-top: 8rem;
+        margin-bottom: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .home main section{
+        min-width: 90%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-self: center;
+    }
+    
+    .home main section .div{
+        min-width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .home main .section-one{
+        height: 40rem;
+        margin: 0px 0px 4rem;
+    }
+    
+    .home main .section-one .div{
+        height: 35rem;
+        background-color: var(--blue-ten);
+        border-radius: 1rem;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    
+    .home main section .div span{
+        height: 100%;
+        margin: 0px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .home main section .div span.text{
+        min-width: 20%;
+        margin-left: 5rem;
+    }
+    
+    .home main section .div span h1{
+        font-size: 5rem;
+        line-height: 5rem;
+        margin: 0px;
+        margin-bottom: 2rem;
+    }
+    
+    .home main section .div span button{
+        border: none;
+        color: black;
+        background: white;
+        padding: 1rem 3rem;
+        border-radius: 0.5rem;
+    }
+    
+    .home main section .div span button a{
+        text-decoration: none;
+        color: var(--blue-ten);
+    }
+    
+    .home main img{
+        min-width: 400px;
+        margin: 0px;
+    }
+    
+    .home main section .div span.image{
+        min-width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    
+    .home main section .div span.image span{
+        min-width: 80%;
+        height: 85%;
+        background-color: white;
+        border-radius: 15rem;
+        position: absolute;
+        top: 4rem;
+        right: 5rem;
+    }
+    
+    .home main section .div span.image img{
+        min-width: 110%;
+        height: 90%;
+        position: absolute;
+        bottom: 0rem;
+        right: 0.1rem;
+    }
+    
+    .home main .section-one .dot i.blue-dot{
+        color: var(--blue-ten);
+    }
+    
+    .home main .section-one .dot i.gray-dot{
+        color: var(--grey-eight);
+    }
+    
+    .home main .section-two{
+        height: auto;
+        margin: 2rem;
+    }
+    
+    .home main .section-two .div {
+        min-width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    
+    .home main .section-two .div .item{
+        min-width: 31%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home main .section-two .div .item .border{
+        min-width: 100%;
+        margin: 0px;
+        border: 1px solid black;
+        position: relative;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .home main .section-two .div .item .border .bi-heart{
+        position: absolute;
+        font-size: 1.3rem;
+        right: 2rem;
+        top: 2rem;
+    }
+    
+    .home main .section-two .div .item .border img{
+        min-width: 97%;
+        height: 27rem;   
+    }
+    
+    .home main .section-two .div .item .border .dot{
+        position: absolute;
+        background-color: white;
+        color: var(--blue-ten);
+        border-radius: 2rem;
+        bottom: 12rem;
+    }
+    
+    .home main .section-two .div .item .border .name{
+        min-width: 96%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home main .section-two .div .item .border .name .rating .yellow{
+        color: var(--yellow-two);
+    }
+    
+    .home main .section-two .div .item .border .name .rating .gray{
+        color: gray;
+    }
+    
+    .home main .section-two .div .item .border .color-dot{
+        min-width: 96%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .home main .section-two .div .item .border .color-dot .bord{
+        margin: 0px;
+        padding: 0.05px;
+        margin-right: 1px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    
+    .home main .section-two .div .item .border .price{
+        min-width: 96%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .home main .section-two .div .item .border .price button{
+        background-color: var(--blue-ten);
+        border: none;
+        padding: 0.7rem 1.2rem;
+        border-radius: 0.2rem;
+    }
+    
+    .home main .section-two .div .item .border .price button a{
+        color: white;
+        text-decoration: none;
+        font-weight: 100;
+    }
+    
+    .home main .section-two .dot{
+    margin-bottom: 3rem;
+    }
+    
+    .home main .section-two .dot i.blue-dot{
+        color: var(--blue-ten);
+    }
+    
+    .home main .section-two .dot i.gray-dot{
+        color: var(--grey-eight);
+    }
+    
+    .home main .section-two .btn button{
+        background-color: var(--blue-ten);
+        border: none;
+        padding: 1rem 5rem;
+        border-radius: 0.5rem;
+    }
+    
+    .home main .section-two .btn button a{
+        color: white;
+        text-decoration: none;
+        font-weight: 100;
+        font-size: 1.5rem;
+        margin: 0px;
+        font-weight: 100;
+    }
+    
+    .home main .section-three h1{
+        font-size: 3rem;
+    }
+    
+    
+    .home main .section-three .filter{
+        min-width: 30%;
+        height: 4rem;
+        border-radius: 0.5rem;
+        background-color: var(--blue-ten);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home main .section-three .filter span{
+        min-width: 90%;
+        height: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home main .section-three .filter span a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    .home main .section-three .filter span a.active{
+        background-color: white;
+        color: var(--blue-ten);
+        padding: 0.7rem 1.7rem;
+        border-radius: 0.4rem;
+    }
+    
+    .home main .section-three .explore{
+        min-width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home main .section-three .explore h3{
+        font-size: 1.6rem;
+    }
+    
+    .home main .section-three .explore a{
+        text-decoration: none;
+        color: var(--blue-ten);
+    }
+    
+    
+    .home main .section-three .filter-items{
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home main .section-three .filter-items .item{
+        min-width: 32.5%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
+        -webkit-box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
+        -moz-box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
+    }
+    
+    .home main .section-three .filter-items .item .border{
+        min-width: 100%;
+        margin: 0px;
+        position: relative;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .home main .section-three .filter-items .item .border .bi-heart{
+        position: absolute;
+        font-size: 1.3rem;
+        right: 2rem;
+        top: 2rem;
+    }
+    
+    .home main .section-three .filter-items .item .border img{
+        min-width: 97%;
+        height: 27rem;   
+    }
+    
+    .home main .section-three .filter-items .item .border .dot{
+        position: absolute;
+        background-color: white;
+        color: var(--blue-ten);
+        border-radius: 2rem;
+        bottom: 12rem;
+    }
+    
+    .home main .section-three .filter-items .item .border .dot i.blue-dot{
+        color: var(--blue-ten);
+    }
+    
+    .home main .section-three .filter-items .item .border .dot i.gray-dot{
+        color: var(--grey-eight);
+    }
+    
+    .home main .section-three .filter-items .item .border .name{
+        min-width: 96%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home main .section-three .filter-items .item .border .name .rating .yellow{
+        color: var(--yellow-two);
+    }
+    
+    .home main .section-three .filter-items .item .border .name .rating .gray{
+        color: gray;
+    }
+    
+    .home main .section-three .filter-items .item .border .color-dot{
+        min-width: 96%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .home main .section-three .filter-items .item .border .color-dot .bord{
+        margin: 0px;
+        padding: 0.05px;
+        margin-right: 1px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    
+    .home main .section-three .filter-items .item .border .price{
+        min-width: 96%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .home main .section-three .filter-items .item .border .price button{
+        background-color: var(--blue-ten);
+        border: none;
+        padding: 0.7rem 1.2rem;
+        border-radius: 0.2rem;
+    }
+    
+    .home main .section-three .filter-items .item .border .price button a{
+        color: white;
+        text-decoration: none;
+        font-weight: 100;
+    }
+    
+    .home main .section-three .filter-items .item .border .dot{
+        position: absolute;
+        background-color: white;
+        color: var(--blue-ten);
+        border-radius: 2rem;
+        bottom: 5rem;
+    }
+    
+    .home main .section-three .filter-items .item .border .name{
+        min-width: 96%;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .home main .section-three .filter-items .item .border .name .rating .yellow{
+        color: var(--yellow-two);
+    }
+    
+    .home main .section-three .filter-items .item .border .name .rating .gray{
+        color: gray;
+    }
+    
+    .home main .section-three .filter-items .item .border .color-dot{
+        min-width: 96%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .home main .section-three .filter-items .item .border .color-dot .bord{
+        margin: 0px;
+        padding: 0.05px;
+        margin-right: 1px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    
+    .home main .section-three .filter-items .item .border .price{
+        min-width: 96%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .home main .section-three .filter-items .item .border .price button{
+        background-color: var(--blue-ten);
+        border: none;
+        padding: 0.7rem 1.2rem;
+        border-radius: 0.2rem;
+    }
+    
+    .home main .section-three .filter-items .item .border .price button a{
+        color: white;
+        text-decoration: none;
+        font-weight: 100;
+    }
+    
+    
+    .home main .section-four{
+        margin: 2rem 0px;
+        min-width: 100%;
+        height: 35rem;
+        background-color: var(--blue-ten);
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .home main .section-four .image{
+        min-width: 70%;
+        height: 110%;
+        margin: 0px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    
+    .home main .section-four .image span{
+        min-width: 65rem;
+        height: 45rem;
+        background-color: white;
+        position: absolute;
+        left: -10rem;
+        top: 0.7rem;
+        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 53% 65%, 7% 95%, 22% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 53% 65%, 7% 95%, 22% 57%, 2% 35%, 39% 35%);
+    }
+    
+    
+    .home main .section-four .image img{
+        min-width: 35rem;
+        height: 95%;
+        position: absolute;
+        z-index: 2;
+        top: 1.5rem;
+        margin: 0px;
+    }
+    
+    .home main .section-four .image img:nth-child(2n){
+        left: -1.5rem;
+    }
+    
+    
+    .home main .section-four .image img:nth-child(2n+1){
+        left:30%;
+    }
+    .home main .section-four .text{
+        min-width: 35%;
+        margin-right: 5rem;
+        height: 20rem;
+        position: relative;
+        z-index: 2;
+        color: white;
+    }
+    
+    .home main .section-four .text .input{
+        min-width: 100%;
+        padding: 0.7rem;
+        margin: 0.7rem 0rem;
+    }
+    
+    .home main .section-four .text span{
+        min-width: 50%;
+    }
+    
+    .home main .section-four .text span h1{
+        font-size: 2rem;
+        font-family: 100;
+        margin: 0px;
+    }
+    
+    .home main .section-four .text span p{
+        font-size: 1.3rem;
+        margin: 1rem 0px;
+    }
+    
+    .home main .section-four .text .span{
+        min-width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 1rem 0rem;
+    }
+    
+    .home main .section-four .text .span input{
+        margin-right: 10px;
+    }
+    
+    .home main .section-four .text .span label{
+        font-size: 0.9rem;
+    }
+    
+    .home main .section-four .text button{
+        min-width: 100%;
+        padding: 0.7rem;
+        margin: 0.7rem 0rem;
+        background-color: var(--green-six);
+        border: none;
+        color: var(--blue-ten);
+    }
+    
+    /* policy page */
+    .policy main{
+        min-width: 100%;
+        margin: 0px;
+        margin-top: 7rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .policy main section{
+        min-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+    }
+    
+    .policy main section h1{
+        font-size: 2rem;
+        margin: 0.3rem 0rem;
+    }
+    
+    .policy main section h2{
+        font-size: 1.7rem;
+        margin: 0.1rem 0rem;
+    }
+    
+    .policy main section h3{
+        font-size: 1.5rem;
+        margin: 0.1rem 0rem;
+    }
+    
+    .policy main section ul{
+        padding: 0.5rem;
+    }
+    
+    .policy main section ul li{
+        margin: 0px;
+        list-style: none;
+    }
+    
+    
+    .policy main section ul li i{
+        color: gray;
+        margin-right: 10px;
+    }
+    
+    /* about us page */
+    
+    .about main{
+        min-width: 100%;
+        margin: 0px;
+        margin-top: 12rem;
+        margin-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .about main section{
+        min-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .about main section img{
+        min-width: 99%;
+        margin: 2rem 0rem;
+    }
+    
+    .about main section h1{
+        font-size: 2rem;
+        margin: 0.3rem 0rem;
+    }
+    
+    .about main section h2{
+        font-size: 1.7rem;
+        margin: 0rem;
+    }
+    
+    .about main section p{
+        margin: 0rem;
+    }
+    
+    .about main section ul{
+        padding: 0.5rem;
+    }
+    
+    .about main section ul li{
+        margin: 1rem 0rem;
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        text-align: justify;
+    }
+    
+    .about main section ul li h2{
+        margin-right: 10px;
+        min-width: 100%;
+    }
+    
+    .about main section .div{
+        min-width: 100%;
+        height: 32.5rem;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about main section .div .frame{
+        min-width: 45%;
+    }
+    
+    .about main section .div form{
+        min-width: 45%;
+        height: 98%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .about main section .div form h3{
+        font-size: 1.5rem;
+        margin: 0rem;
+    }
+    
+    .about main section .div form p{
+        text-align: justify;
+        margin: 0rem;
+    }
+    
+    .about main section .div form span{
+        min-width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about main section .div form span input{
+        min-width: 45%;
+        padding: 0.5rem;
+        margin: 0px;
+    }
+    
+    
+    .about main section .div form .subject{
+        min-width: 96%;
+        padding: 0.5rem;
+    }
+    
+    .about main section .div form button{
+        background-color: var(--blue-ten);
+        color: white;
+        border: none;
+        padding: 0.7rem 1.5rem;
+    
+    }
+    
+    /* Error page */
+    .error main section{
+        flex-direction: column;
+        position: relative;
+        margin: 10rem 0rem;
+    }
+    
+    .error main section img{
+        min-width: 60%;
+    }
+    
+    .error main section h1{
+        color: var(--blue-eight);
+        font-size: 2rem;
+        font-weight: 900;
+        position: absolute;
+        z-index: 2;
+        bottom: 6rem;
+        left: 26rem;
+    }
+    
+    
+    .error main section button{
+        background-color: var(--blue-ten);
+        border: none;
+        padding: 0.9rem 3rem;
+        border-radius: 0.3rem;
+    }
+    
+    .error main section button a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    /* order complete page */
+    .order main{
+        min-width: 100%;
+        margin: 12rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order main section{
+        min-width: 97%;
+        margin: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order main section .div{
+        min-width: 50%;
+        height: 23rem;
+        margin: 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        border: 0.2rem dotted gray;
+    }
+    
+    .order main section .div i{
+        font-size: 5.2rem;
+        background-color: var(--blue-ten);
+        color: white;
+        border-radius: 100%;
+        padding: 0px;
+        box-sizing: border-box;
+        height: 3rem;
+        min-width: 3rem;
+        position: absolute;
+        top: 2.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .order main section .div h1{
+        font-size: 2.5rem;
+    }
+    
+    .order main section .div p{
+        text-align: center;
+        line-height: 2rem;
+    }
+    
+    .order main section .div button{
+        border: none;
+        background-color: var(--blue-ten);
+        padding: 0.7rem 2rem;
+    }
+    
+    .order main section .div button a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    /* Styling for the popup container */
+    .popup-container {
+        display: none;
+        position: absolute;
+        top: -7rem;
+        left: 15rem;
+        min-width: 70%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Styling for the popup content */
+    .popup-content {
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 5px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    /* Close button styling */
+    .close-button {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+    }
+    
+    .popup-content h2{
+        margin-top: 4rem;
+        font-weight: 100;
+    }
+    
+    .popup-content .signup-btn{
+        display: block;
+        margin: 0.5rem 0rem;
+        padding: 0.5rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        min-width: 50%;
+        box-sizing: border-box;
+    }
+    
+    .popup-content .signup-btn i{
+        font-size: 1.2rem;
+        margin: 0;
+        margin-right: 1rem;
+    }
+    
+    .popup-content .signup-btn i.bi-facebook{
+        color: var(--blue-one);
+    }
+    
+    .or{
+        height: 0.1rem;
+        min-width: 50%;
+        background-color: #040606;
+        margin: 1rem 0rem;
+        position: relative;
+    }
+    
+    .or h4{
+        font-weight: 100;
+        padding: 0.1rem;
+        position: absolute;
+        right: 50%;
+        bottom: -7px;
+        margin: 0rem;
+        background-color: white;
+    }
+    
+    .p{
+        margin: 0px;
+        margin-bottom: 1rem;
+        font-weight: 100;
+    }
+    
+    .input{
+        min-width: 29rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin: 0px;
+        margin-bottom: 0.3rem;
+        color: gray;
+    }
+    
+    .large input{
+        min-width: 97%;
+        padding: 0.5rem;
+        margin-top: 3px;
+        border-radius: 5px;
+    }
+    
+    .large span.password{
+        min-width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .checkbox{
+        margin: 0.5rem 0rem;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    
+    .checkbox p{
+        margin: 0px;
+        text-align: start;
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    
+    .large span.number{
+        min-width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 7px;
+        margin-top: 0.5rem;
+    }
+    
+    .large span.number select{
+        min-width: 10%;
+        height: 100%;
+        margin: 0px;
+    }
+    
+    .large span.number input{
+        min-width: 80%;
+        border: none;
+    }
+    
+    .signbutton{
+        padding: 1rem 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        background-color: var(--blue-ten);
+        color: white;
+        font-size: 1.2rem;
+    }
+    
+    .popup-content form .link a{
+        color: var(--blue-one);
+    }
+    
+    .popup-content form{
+        margin-bottom: 5rem;
+    }
+    
+    #signupSucessPopup{
+        height: auto;
+    }
+    
+    #signupSucessPopup .popup-content{
+        height: 40rem;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    #signupSucessPopup .popup-content .div{
+        min-width: 30%;
+        margin: 0rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    #signupSucessPopup .popup-content .div i{
+        font-size: 5.2rem;
+        background-color: var(--blue-ten);
+        color: white;
+        border-radius: 100%;
+        padding: 0px;
+        box-sizing: border-box;
+        height: 3rem;
+        min-width: 3rem;
+        position: absolute;
+        top: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #signupSucessPopup .popup-content .div h1{
+        font-size: 2.5rem;
+        font-weight: 100;
+        margin: 0rem;
+        line-height: 2.1rem;
+    }
+    
+    #signupSucessPopup .popup-content .div p{
+        text-align: center;
+        color: gray;
+        line-height: 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+    
+    .pageTitle{
+        min-width: 100%;
+        height: 4rem;
+        margin: 0px;
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--misc-twenty-one);
+    }
+    
+    .pageTitle .titleDiv{
+        min-width: 90%;
+        height: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .pageTitle .titleDiv h1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+        color: rgb(113, 113, 113);
+    }
+    
+    .pageTitle .titleDiv h1 a{
+        color: rgb(113, 113, 113);
+        text-decoration: none;
+        font-size: 1.2rem;
+        margin: 0px;
+    }
+    
+    
+    .pageTitle .titleDiv h1 span{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .pageTitle .titleDiv h1 span.active a{
+        color: var(--blue-ten);
+    }
+    
+    /* shop page */
+    
+    .shop .filter{
+        min-width: 100%;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    
+    .shop .filter .filterDiv{
+        min-width: 90%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .shop .filter .filterDiv h1{
+        min-width: 25%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1rem;
+    }
+    
+    .shop .filter .filterDiv .h1{
+        align-items: flex-start;
+        font-size: 1.2rem;
+    }
+    
+    .shop .filter .filterDiv h1 span{
+        min-width: 50%;
+        margin: 0px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+    }
+    
+    .shop .filter .filterDiv h1 span p,
+    .shop .filter .filterDiv h1 span i{
+        margin: 0px;
+    }
+    
+    .shop .floatSort{
+        min-width: 25rem;
+        height: auto;
+        padding: 1rem 0.5rem 2rem;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 1px 1px 20px 1px black;
+        position: absolute;
+        top: -4px;
+        right: 5%;
+        display: none;
+    }
+    
+    .shop .floatSort span{
+        min-width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: rgb(82, 81, 81);
+        font-size: 1.2rem;
+        margin: 1rem auto;
+    }
+    
+    .shop .floatSort span.border{
+        justify-content: space-between;
+        border-bottom: 1px solid gray;
+    }
+    
+    .shop .floatSort span input{
+        min-width: 2rem;
+        height: 2rem;
+        margin-right: 2rem;
+    }
+    
+    .shop .floatSort button{
+        min-width: 90%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem auto;
+        margin-top: 4rem;
+        background-color: var(--blue-ten);
+        color: white;
+        border: none;
+        border-radius: 3px;
+    }
+    
+    .shop .mainContainer{
+        min-width: 90%;
+        height: auto;
+        margin: 1rem auto 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .shop .mainContainer aside{
+        min-width: 25%;
+        margin: 0px;
+        /* background-color: #0052CC; */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .shop .mainContainer aside ul{
+        padding: 0rem;
+    }
+    
+    .shop .mainContainer aside ul li{
+        list-style: none;
+        padding: 0.3rem 2.8rem;
+        border: 1px solid gray;
+        margin: 0rem 0rem 1rem;
+    }
+    
+    .shop .mainContainer aside fieldset{
+        min-width: 90%;
+        height: auto;
+        margin: 1rem 0rem;
+        padding: 0rem 2rem;
+        box-sizing: border-box;
+    }
+    
+    .shop .mainContainer aside fieldset div{
+        min-width: 100%;
+    }
+    
+    .shop .mainContainer aside fieldset div h4{
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .shop .mainContainer aside fieldset ul{
+        border-top: 1px solid var(--grey-three);
+        min-width: 100%;
+        margin: 0px;
+        padding: 0rem;
+        display: none;
+    }
+    
+    .shop .mainContainer aside fieldset ul li{
+        padding: 0px;
+        min-width: 100%;
+        margin: 0.1rem 0rem;
+        border: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+    
+    .shop .mainContainer aside fieldset ul li input{
+        min-width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    
+    .shop .mainContainer aside fieldset ul li p{
+        font-size: 1rem;
+    }
+    
+    .shop .mainContainer main{
+        min-width: 75%;
+        margin: 0px;
+    }
+    
+    .shop .mainContainer main .grid-container{
+        padding: 1rem;
+        --min-column-size: 30%;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item{
+        border: 1px solid black;
+        height: auto;
+        position: relative;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item img{
+        min-width: 100%;
+        height: 20rem;
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item .ri-heart-line{
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item span{
+        min-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px;
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item span.dot{
+        justify-content: center;
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item .text span{
+        min-width: 40%;
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item .text span.rating .yellow{
+        color: var(--yellow-four);
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item span.color{
+        justify-content: start;
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item span i{
+        color: gray;
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item span .blue-dot{
+        color: var(--blue-ten);
+    }
+    
+    .shop .mainContainer main .grid-container .grid-item span a{
+        background-color: var(--blue-ten);
+        color: white;
+        text-decoration: none;
+        padding: 0.5rem 0.7rem;
+    }
+    
+    
+    /* product detail page */
+    .detail .mainContainer{
+        min-width: 80%;
+        margin-bottom: 20rem;
+    }
+    
+    .detail .mainContainer .one{
+        min-width: 50%;
+        padding: 1rem;
+        margin: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .detail .mainContainer .one .images{
+        min-width: 90%;
+        margin: auto 1rem;
+    }
+    
+    .detail .mainContainer .one .images .img1{
+        min-width: 100%;
+        height: 23rem;
+        margin: 0px;
+    }
+    
+    .detail .mainContainer .one .images .small{
+        min-width: 100%;
+        margin-top: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .detail .mainContainer .one .images .small img{
+        min-width: 9rem;
+        height: 5rem;
+    }
+    
+    .detail .mainContainer .two{
+        min-width: 45%;
+    }
+    
+    .detail .mainContainer .two h3{
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    
+    .detail .mainContainer .two div{
+        min-width: 100%;
+        display: flex;
+        text-align: justify;
+    }
+    
+    .detail .mainContainer .two p{
+        min-width: 100%;
+        display: flex;
+        text-align: justify;
+    }
+    
+    .detail .mainContainer .two div.review .rating{
+        margin-right: 1rem;
+    }
+    
+    .detail .mainContainer .two div.review .rating .yellow{
+        color: var(--yellow-four);
+    }
+    
+    .detail .mainContainer .two div.review a{
+        color: gray;
+    }
+    
+    .detail .mainContainer .two div.price{
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    
+    .detail .mainContainer .two div.price span{
+        line-height: 0px;
+    }
+    
+    .detail .mainContainer .two div.price span h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .detail .mainContainer .two div.price span p{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    
+    .detail .mainContainer .two div.price span.unit{
+        min-width: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        border: 1px solid black;
+        border-radius: 0.4rem;
+        overflow: hidden;
+    }
+    
+    .detail .mainContainer .two div.price span.unit input{
+        min-width: 2rem;
+        height: 100%;
+        font-size: 20px;
+        padding: auto;
+        margin: 0px;
+        border: none;
+    }
+    
+    .detail .mainContainer .two div.price span.unit select{
+        min-width: 4rem;
+        height: 100%;
+        font-size: 20px;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+    }
+    
+    .detail .mainContainer .two div.price button{
+        border: none;
+        background-color: var(--blue-ten);
+        padding: 0.6rem 1.3rem;
+        color: white;
+        border-radius: 0.3rem;
+    }
+    
+    .detail .mainContainer .two div.tab-heading{
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        margin-top: 3rem;
+    }
+    
+    .detail .mainContainer .two div.tab-heading h4{
+        padding: 1rem 2rem 1rem;
+        margin: 0px;
+    }
+    
+    .detail .mainContainer .two div.tab-heading h4.active{
+        border-bottom: 3px solid var(--blue-ten);
+    }
+    
+    .detail .mainContainer .two .tab-text{
+        padding: 1rem 0.5rem;
+        min-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .detail .mainContainer .two .tab-text span,
+    .detail .mainContainer .two .tab-text p{
+        margin:  0rem  0rem 0.5rem;
+    }
+    
+    .detail .mainContainer .two .tab-text p{
+        margin-bottom: 1.9rem;
+    }
+    
+    .detail .mainContainer .two .link{
+        border: none;
+        text-decoration: none;
+        background-color: var(--blue-ten);
+        padding: 0.8rem 1.9rem;
+        color: white;
+        margin: 0rem;
+        border-radius: 0.3rem;
+    }
+    
+    .checkout main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .checkout main .main{
+        min-width: 70%;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .checkout main .main form{
+        min-width: 57%;
+        margin-bottom: 10rem;
+    }
+    
+    .checkout main .main form .div{
+        min-width: 100%;
+        margin: 1.5rem 0rem;
+    }
+    
+    
+    .checkout main .main form .div h1{
+        font-size: 1.4rem;
+        margin: 5px 0px;
+    }
+    
+    .checkout main .main form .div p{
+        min-width: 97%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        color: gray;
+        margin: 5px 0px 20px;
+    }
+    
+    .checkout main .main form .div .input-container{
+        min-width: 97%;
+        margin: 0rem;
+        padding: 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .checkout main .main form .div .input-container .detail-form{
+        min-width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0px;
+        padding: 0rem;
+        padding-right: 0.5rem;
+    }
+    
+    .checkout main .main form .div .input-container .detail-form .input-item{
+        min-width: 100%;
+        padding: 0rem;
+        margin: 0rem;
+        margin-bottom: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    .checkout main .main form .div .input-container .detail-form .input-item input{
+        min-width: 95%;
+        padding: 0.5rem;
+        background-color: rgb(241, 240, 240);
+        border: 0.1px solid gray;
+    }
+    
+    .checkout main .main form .div .input-container .detail-form .checkitem{
+        min-width: 93%;
+        margin-top: 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: rgb(241, 240, 240);
+        border: 0.1px solid gray;
+        padding: 0.5rem;
+    }
+    
+    .checkout main .main form .div .input-container .detail-form .checkitem input{
+        flex-direction: row;
+        padding: 0rem;
+        min-width: auto;
+        background-color: rgb(241, 240, 240);
+        border: 0.1px solid gray;
+    }
+    
+    .checkout main .main form .div .input-container .radio-item{
+        min-width: 93%;
+        margin-top: 1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: rgb(241, 240, 240);
+        border: 0.1px solid gray;
+        padding: 0.5rem;
+    }
+    
+    .checkout main .main form .div .second-input-container{
+        flex-direction: column;
+    }
+    
+    .checkout main .main form .div .second-input-container .radio-item{
+        min-width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        height: auto;
+    }
+    
+    .checkout main .main form .div .second-input-container .radio-item span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .checkout main .main form .div .second-input-container .radio-item .price-span{
+        display: flex;
+        min-width: 40%;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .checkout main .main form .div .second-input-container .radio-item .price-span p span{
+        margin-right: 0.7rem;
+    }
+    
+    .checkout main .main form .div .second-input-container .radio-item #radio{
+        margin-right: 0.7rem;
+    }
+    
+    .checkout main .main form .div .second-input-container .second-radio-item{
+        min-width: 95%;
+    }
+    
+    .checkout main .main form .div .second-input-container .second-radio-item div{
+        min-width: 100%;
+    }
+    
+    .checkout main .main form .div .second-input-container .second-radio-item .card{
+        margin-top: 2rem;
+    }
+    
+    .checkout main .main form .div .second-input-container .second-radio-item .card span input{
+        min-width: 90%;
+    }
+    
+    .checkout main .main form .div .second-input-container .second-radio-item .card input{
+        padding: 0.3rem;
+    }
+    
+    .checkout main .main form .div .second-input-container .second-radio-item .card .card-number #card-number{
+        min-width: 97%;
+    }
+    
+    .checkout main .main form .div .second-input-container .second-radio-item .card-info{
+        margin-top: 2rem;
+    }
+    
+    .checkout main .main form .div .agree{
+        padding: 0.5rem 0.1rem;
+        margin: 0rem;
+        margin-top: 0.5rem;
+    }
+    
+    .checkout main .main form .div .agree input{
+        border: 0.1px solid gray;
+    }
+    
+    .checkout main .main form .btn{
+        padding: 0.7rem 2rem;
+        margin: 2rem 0rem;
+    }
+    
+    .checkout main .main .section{
+        min-width: 40%;
+        padding: 1rem;
+    }
+    
+    .checkout main .main .section .orderSummary{
+        min-width: 100%;
+        padding: 0rem;
+        margin: 0rem;
+    }
+    
+    .checkout main .main .section .orderSummary #p{
+        font-size: 0.72rem;
+    }
+    
+    .checkout main .main .section .orderSummary .div{
+        margin: 2rem 0rem;
+    }
+    
+    .checkout main .main .section .orderSummary .div #span{
+        width: 70%;
+    }
+    
+    .checkout main .main .section .orderSummary .div #span h6{
+        font-size: 1rem;
+        margin: 0rem;
+        line-height: 0rem;
+    }
+    
+    .checkout main .main .section .orderSummary .div #span #di{
+        width: 50%;
+        font-size: 0.7rem;
+    }
+    
+    .checkout main .main .section .orderSummary .div #span .rating{
+
+        font-size: 0.7rem;
+    }
+    
+    .checkout main .main .section .orderSummary .div #price h4{
+        font-size: 1rem;
+    }
+    
+    .checkout main .main .section .orderSummary .div #price p{
+
+        font-size: 0.7rem;
+    }
+
+    
+    .checkout main .main .section .orderSummary .div img{
+        width: 4rem;
+        height: 3rem;
+    }
+    
+    .checkout main .main .section .orderSummary .div #div span{
+        width: 6rem;
+
+    }
+    
+    .checkout main .main .section .orderSummary .div #div span input,
+    .checkout main .main .section .orderSummary .div #div span select{
+        width: 2.9rem;
+        height: 1.5rem;
+    }
+    
+    
+}
+
