@@ -80,29 +80,33 @@
 
 
 body{
-    min-width: 100dvw;
+    width: 100%;
     margin: 0px;
     position: relative;
     padding: 0px;
 }
 
 .container{
-    min-width: 100dvw;
+    width: 100%;
     margin: 0px;
-    height: auto; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header{
-    min-width: 100vw;
+    width: 100%;
     margin: 0px;
-    min-height: 10vh;
+    height: 10vh;
     position: fixed;
     top: 0px;
     z-index: 4;
 }
 
 section{
-    min-width: 100dvw;
+    width: 100%;
     margin-inline: auto;
     padding: max(3vh, 1rem);
     display: flex;
@@ -112,8 +116,8 @@ section{
 }
 
 header section .box{
-    min-width: 90dvw;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     margin: 0px;
     display: flex;
     justify-content: space-between;
@@ -121,7 +125,7 @@ header section .box{
 }
 
 .blue{
-    min-width: 90dvw;
+    width: 100%;
     margin: 0rem;
     background-color: var(--blue-ten);
     color: white;
@@ -157,24 +161,27 @@ header .mobile-white{
 }
 
 header .white .box div{
-    min-width: fit-content;
+    width: fit-content;
     margin: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header .white .box .logo img{
+header .white .box .logo .black-image{
     margin: 0px;
-    width: 45px;
+    padding: 0px;
+    width: 3rem;
+    height: 3rem;
     margin-right: 10px;
+    display:flex;
 }
 
-header .white .box .logo h1{
+header .white .box .logo .black-name{
     margin: 0px;
-    color: var(--blue-ten);
-    font-size: 2rem;
-    font-weight: 600;
+    padding: 0px;
+    width: 15rem;
+    height: 3rem;
 }
 
 header .white .box .search{
@@ -196,7 +203,7 @@ header .white .box .search span{
     width: 35ch;
     margin: 0px;
     border: none;
-    min-height: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -262,7 +269,7 @@ header .white .box .btn .login{
 
 footer{
     width: 100%;
-    min-height: 60vh;
+    height: 60vh;
     background-color: var(--blue-ten);
     margin: 0px;
     z-index: 1;
@@ -272,7 +279,7 @@ footer{
     align-items: center;
     position: absolute;
     color: white;
-    /* bottom: 0px; */
+    bottom: 0px;
     padding: max(0.9rem, 0.4rem);
     box-sizing: border-box;
 }
@@ -335,7 +342,7 @@ footer .second{
 }
 
 footer section .social{
-    min-width: 18%;
+    width: 18%;
     box-sizing: border-box;
     height: fit-content;
     display: flex;
@@ -346,8 +353,8 @@ footer section .social{
 }
 
 footer section .social a{
-    min-width: 4rem;
-    min-height: 2.5rem;
+    width: 4rem;
+    height: 2.5rem;
     position: absolute;
     font-size: 1.5rem;
     color: var(--blue-ten);
@@ -375,7 +382,7 @@ footer section .social a:nth-child(3n + 2){
 }
 
 footer section .payment{
-    min-width: 27%;
+    width: 27%;
     display: flex;
     justify-content: space-between;
     margin: 0px;
@@ -385,8 +392,8 @@ footer section .payment{
 
 footer section .payment a{
     position: absolute;
-    min-width: 4rem;
-    min-height: 2.3rem;
+    width: 4rem;
+    height: 2.3rem;
 }
 
 
@@ -411,19 +418,27 @@ footer section .payment a:nth-child(4n + 3){
     right: 27.5%;
 }
 
+footer section #webCopy{
+    display: block;
+}
+
+footer section #mobileCopy{
+    display: none;
+}
+
 /* home page */
 .home main{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     margin-top: 8rem;
-    margin-bottom: 10rem;
+    margin-bottom: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .home main section{
-    min-width: 90%;
+    width: 90%;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -432,7 +447,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main section .div{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: space-evenly;
@@ -464,7 +479,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main section .div span.text{
-    min-width: 20%;
+    width: 20%;
     margin-left: 5rem;
 }
 
@@ -489,18 +504,18 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main img{
-    min-width: 400px;
+    width: 400px;
     margin: 0px;
 }
 
 .home main section .div span.image{
-    min-width: 50%;
+    width: 50%;
     height: 100%;
     position: relative;
 }
 
 .home main section .div span.image span{
-    min-width: 80%;
+    width: 80%;
     height: 85%;
     background-color: white;
     border-radius: 15rem;
@@ -510,7 +525,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main section .div span.image img{
-    min-width: 110%;
+    width: 110%;
     height: 90%;
     position: absolute;
     bottom: 0rem;
@@ -531,7 +546,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main .section-two .div {
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: space-between;
@@ -540,7 +555,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main .section-two .div .item{
-    min-width: 31%;
+    width: 31%;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -549,7 +564,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main .section-two .div .item .border{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     border: 1px solid black;
     position: relative;
@@ -567,7 +582,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main .section-two .div .item .border img{
-    min-width: 97%;
+    width: 97%;
     height: 27rem;   
 }
 
@@ -580,7 +595,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main .section-two .div .item .border .name{
-    min-width: 96%;
+    width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -595,7 +610,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main .section-two .div .item .border .color-dot{
-    min-width: 96%;
+    width: 96%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -614,7 +629,7 @@ footer section .payment a:nth-child(4n + 3){
 }
 
 .home main .section-two .div .item .border .price{
-    min-width: 96%;
+    width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -668,7 +683,7 @@ margin-bottom: 3rem;
 
 
 .home main .section-three .filter{
-    min-width: 30%;
+    width: 30%;
     height: 4rem;
     border-radius: 0.5rem;
     background-color: var(--blue-ten);
@@ -678,7 +693,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter span{
-    min-width: 90%;
+    width: 90%;
     height: 95%;
     display: flex;
     justify-content: space-between;
@@ -698,7 +713,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .explore{
-    min-width: 95%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -713,16 +728,19 @@ margin-bottom: 3rem;
     color: var(--blue-ten);
 }
 
+.home main .section-three .mobileExplore{
+    display: none;
+}
 
 .home main .section-three .filter-items{
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .home main .section-three .filter-items .item{
-    min-width: 32.5%;
+    width: 32.5%;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -734,7 +752,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter-items .item .border{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     position: relative;
     padding: 0.5rem;
@@ -751,7 +769,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter-items .item .border img{
-    min-width: 97%;
+    width: 97%;
     height: 27rem;   
 }
 
@@ -772,7 +790,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter-items .item .border .name{
-    min-width: 96%;
+    width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -787,7 +805,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter-items .item .border .color-dot{
-    min-width: 96%;
+    width: 96%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -806,7 +824,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter-items .item .border .price{
-    min-width: 96%;
+    width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -835,7 +853,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter-items .item .border .name{
-    min-width: 96%;
+    width: 96%;
     margin-top: 1rem;
     display: flex;
     justify-content: space-between;
@@ -851,7 +869,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter-items .item .border .color-dot{
-    min-width: 96%;
+    width: 96%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -870,7 +888,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-three .filter-items .item .border .price{
-    min-width: 96%;
+    width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -893,7 +911,7 @@ margin-bottom: 3rem;
 
 .home main .section-four{
     margin: 2rem 0px;
-    min-width: 100%;
+    width: 100%;
     height: 35rem;
     background-color: var(--blue-ten);
     flex-direction: row;
@@ -902,7 +920,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-four .image{
-    min-width: 70%;
+    width: 70%;
     height: 110%;
     margin: 0px;
     position: relative;
@@ -911,7 +929,7 @@ margin-bottom: 3rem;
 
 
 .home main .section-four .image span{
-    min-width: 65rem;
+    width: 65rem;
     height: 45rem;
     background-color: white;
     position: absolute;
@@ -923,7 +941,7 @@ margin-bottom: 3rem;
 
 
 .home main .section-four .image img{
-    min-width: 35rem;
+    width: 35rem;
     height: 95%;
     position: absolute;
     z-index: 2;
@@ -940,7 +958,7 @@ margin-bottom: 3rem;
     left:30%;
 }
 .home main .section-four .text{
-    min-width: 35%;
+    width: 35%;
     margin-right: 5rem;
     height: 20rem;
     position: relative;
@@ -949,13 +967,13 @@ margin-bottom: 3rem;
 }
 
 .home main .section-four .text .input{
-    min-width: 100%;
+    width: 100%;
     padding: 0.7rem;
     margin: 0.7rem 0rem;
 }
 
 .home main .section-four .text span{
-    min-width: 50%;
+    width: 50%;
 }
 
 .home main .section-four .text span h1{
@@ -970,7 +988,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-four .text .span{
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -986,7 +1004,7 @@ margin-bottom: 3rem;
 }
 
 .home main .section-four .text button{
-    min-width: 100%;
+    width: 100%;
     padding: 0.7rem;
     margin: 0.7rem 0rem;
     background-color: var(--green-six);
@@ -996,10 +1014,10 @@ margin-bottom: 3rem;
 
 /* policy page */
 .policy main{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
-    margin-top: 7rem;
-    margin-bottom: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 30rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1007,7 +1025,7 @@ margin-bottom: 3rem;
 }
 
 .policy main section{
-    min-width: 90%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1048,7 +1066,7 @@ margin-bottom: 3rem;
 /* about us page */
 
 .about main{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     margin-top: 12rem;
     margin-bottom: 3rem;
@@ -1059,7 +1077,7 @@ margin-bottom: 3rem;
 }
 
 .about main section{
-    min-width: 90%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1068,7 +1086,7 @@ margin-bottom: 3rem;
 }
 
 .about main section img{
-    min-width: 99%;
+    width: 99%;
     margin: 2rem 0rem;
 }
 
@@ -1102,11 +1120,11 @@ margin-bottom: 3rem;
 
 .about main section ul li h2{
     margin-right: 10px;
-    min-width: 100%;
+    width: 100%;
 }
 
 .about main section .div{
-    min-width: 100%;
+    width: 100%;
     height: 32.5rem;
     margin: 0px;
     display: flex;
@@ -1115,11 +1133,11 @@ margin-bottom: 3rem;
 }
 
 .about main section .div .frame{
-    min-width: 45%;
+    width: 45%;
 }
 
 .about main section .div form{
-    min-width: 45%;
+    width: 45%;
     height: 98%;
     display: flex;
     flex-direction: column;
@@ -1138,7 +1156,7 @@ margin-bottom: 3rem;
 }
 
 .about main section .div form span{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: space-between;
@@ -1146,14 +1164,14 @@ margin-bottom: 3rem;
 }
 
 .about main section .div form span input{
-    min-width: 45%;
+    width: 45%;
     padding: 0.5rem;
     margin: 0px;
 }
 
 
 .about main section .div form .subject{
-    min-width: 96%;
+    width: 96%;
     padding: 0.5rem;
 }
 
@@ -1166,6 +1184,10 @@ margin-bottom: 3rem;
 }
 
 /* Error page */
+.error main{
+    height: 70rem;
+}
+
 .error main section{
     flex-direction: column;
     position: relative;
@@ -1173,7 +1195,7 @@ margin-bottom: 3rem;
 }
 
 .error main section img{
-    min-width: 60%;
+    width: 60%;
 }
 
 .error main section h1{
@@ -1182,8 +1204,8 @@ margin-bottom: 3rem;
     font-weight: 900;
     position: absolute;
     z-index: 2;
-    bottom: 6rem;
-    left: 26rem;
+    bottom: 5rem;
+    left: 20.5rem;
 }
 
 
@@ -1201,15 +1223,16 @@ margin-bottom: 3rem;
 
 /* order complete page */
 .order main{
-    min-width: 100%;
-    margin: 12rem 0rem;
+    width: 100%;
+    margin: 1rem 0rem 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60rem;
 }
 
 .order main section{
-    min-width: 97%;
+    width: 97%;
     margin: 0rem;
     display: flex;
     justify-content: center;
@@ -1217,7 +1240,7 @@ margin-bottom: 3rem;
 }
 
 .order main section .div{
-    min-width: 50%;
+    width: 50%;
     height: 23rem;
     margin: 0rem;
     display: flex;
@@ -1236,7 +1259,7 @@ margin-bottom: 3rem;
     padding: 0px;
     box-sizing: border-box;
     height: 3rem;
-    min-width: 3rem;
+    width: 3rem;
     position: absolute;
     top: 2.3rem;
     display: flex;
@@ -1268,9 +1291,9 @@ margin-bottom: 3rem;
 .popup-container {
     display: none;
     position: absolute;
-    top: -7rem;
+    top: 2rem;
     left: 15rem;
-    min-width: 70%;
+    width: 70%;
     height: auto;
     background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
@@ -1312,7 +1335,7 @@ margin-bottom: 3rem;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    min-width: 50%;
+    width: 50%;
     box-sizing: border-box;
 }
 
@@ -1328,7 +1351,7 @@ margin-bottom: 3rem;
 
 .or{
     height: 0.1rem;
-    min-width: 50%;
+    width: 50%;
     background-color: #040606;
     margin: 1rem 0rem;
     position: relative;
@@ -1351,7 +1374,7 @@ margin-bottom: 3rem;
 }
 
 .input{
-    min-width: 29rem;
+    width: 29rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1362,14 +1385,14 @@ margin-bottom: 3rem;
 }
 
 .large input{
-    min-width: 97%;
+    width: 97%;
     padding: 0.5rem;
     margin-top: 3px;
     border-radius: 5px;
 }
 
 .large span.password{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: space-between;
@@ -1390,7 +1413,7 @@ margin-bottom: 3rem;
 }
 
 .large span.number{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: space-evenly;
@@ -1401,13 +1424,13 @@ margin-bottom: 3rem;
 }
 
 .large span.number select{
-    min-width: 10%;
+    width: 10%;
     height: 100%;
     margin: 0px;
 }
 
 .large span.number input{
-    min-width: 80%;
+    width: 80%;
     border: none;
 }
 
@@ -1441,7 +1464,7 @@ margin-bottom: 3rem;
 }
 
 #signupSucessPopup .popup-content .div{
-    min-width: 30%;
+    width: 30%;
     margin: 0rem;
     margin-top: 5rem;
     display: flex;
@@ -1459,7 +1482,7 @@ margin-bottom: 3rem;
     padding: 0px;
     box-sizing: border-box;
     height: 3rem;
-    min-width: 3rem;
+    width: 3rem;
     position: absolute;
     top: 1.5rem;
     display: flex;
@@ -1483,7 +1506,7 @@ margin-bottom: 3rem;
 }
 
 .pageTitle{
-    min-width: 100%;
+    width: 100%;
     height: 4rem;
     margin: 0px;
     margin-top: 10rem;
@@ -1494,7 +1517,7 @@ margin-bottom: 3rem;
 }
 
 .pageTitle .titleDiv{
-    min-width: 90%;
+    width: 90%;
     height: 10rem;
     display: flex;
     justify-content: space-between;
@@ -1530,7 +1553,7 @@ margin-bottom: 3rem;
 /* shop page */
 
 .shop .filter{
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     display: flex;
     justify-content: center;
@@ -1539,7 +1562,7 @@ margin-bottom: 3rem;
 }
 
 .shop .filter .filterDiv{
-    min-width: 90%;
+    width: 90%;
     margin: 0px;
     display: flex;
     justify-content: space-between;
@@ -1547,7 +1570,7 @@ margin-bottom: 3rem;
 }
 
 .shop .filter .filterDiv h1{
-    min-width: 25%;
+    width: 25%;
     margin: 0px;
     display: flex;
     justify-content: space-between;
@@ -1561,7 +1584,7 @@ margin-bottom: 3rem;
 }
 
 .shop .filter .filterDiv h1 span{
-    min-width: 50%;
+    width: 50%;
     margin: 0px;
     display: flex;
     justify-content: space-evenly;
@@ -1574,7 +1597,7 @@ margin-bottom: 3rem;
 }
 
 .shop .floatSort{
-    min-width: 25rem;
+    width: 25rem;
     height: auto;
     padding: 1rem 0.5rem 2rem;
     background-color: white;
@@ -1590,7 +1613,7 @@ margin-bottom: 3rem;
 }
 
 .shop .floatSort span{
-    min-width: 90%;
+    width: 90%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1605,13 +1628,13 @@ margin-bottom: 3rem;
 }
 
 .shop .floatSort span input{
-    min-width: 2rem;
+    width: 2rem;
     height: 2rem;
     margin-right: 2rem;
 }
 
 .shop .floatSort button{
-    min-width: 90%;
+    width: 90%;
     height: 3rem;
     display: flex;
     justify-content: center;
@@ -1625,7 +1648,7 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer{
-    min-width: 90%;
+    width: 90%;
     height: auto;
     margin: 1rem auto 3rem;
     display: flex;
@@ -1633,7 +1656,7 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer aside{
-    min-width: 25%;
+    width: 25%;
     margin: 0px;
     /* background-color: #0052CC; */
     display: flex;
@@ -1654,7 +1677,7 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer aside fieldset{
-    min-width: 90%;
+    width: 90%;
     height: auto;
     margin: 1rem 0rem;
     padding: 0rem 2rem;
@@ -1662,18 +1685,18 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer aside fieldset div{
-    min-width: 100%;
+    width: 100%;
 }
 
 .shop .mainContainer aside fieldset div h4{
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 .shop .mainContainer aside fieldset ul{
     border-top: 1px solid var(--grey-three);
-    min-width: 100%;
+    width: 100%;
     margin: 0px;
     padding: 0rem;
     display: none;
@@ -1681,7 +1704,7 @@ margin-bottom: 3rem;
 
 .shop .mainContainer aside fieldset ul li{
     padding: 0px;
-    min-width: 100%;
+    width: 100%;
     margin: 0.1rem 0rem;
     border: none;
     display: flex;
@@ -1691,7 +1714,7 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer aside fieldset ul li input{
-    min-width: 1.5rem;
+    width: 1.5rem;
     height: 1.5rem;
     margin-right: 0.5rem;
 }
@@ -1701,16 +1724,16 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer main{
-    min-width: 75%;
+    width: 75%;
     margin: 0px;
 }
 
 .shop .mainContainer main .grid-container{
     padding: 1rem;
-    --min-column-size: 30%;
+    --column-size: 30%;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(var(--column-size), 100%), 1fr));
 }
 
 .shop .mainContainer main .grid-container .grid-item{
@@ -1722,7 +1745,7 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer main .grid-container .grid-item img{
-    min-width: 100%;
+    width: 100%;
     height: 20rem;
 }
 
@@ -1733,7 +1756,7 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer main .grid-container .grid-item span{
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1745,7 +1768,7 @@ margin-bottom: 3rem;
 }
 
 .shop .mainContainer main .grid-container .grid-item .text span{
-    min-width: 40%;
+    width: 40%;
 }
 
 .shop .mainContainer main .grid-container .grid-item .text span.rating .yellow{
@@ -1774,12 +1797,13 @@ margin-bottom: 3rem;
 
 /* product detail page */
 .detail .mainContainer{
-    min-width: 80%;
+    width: 80%;
     margin-bottom: 20rem;
+    height: 50rem;
 }
 
 .detail .mainContainer .one{
-    min-width: 50%;
+    width: auto;
     padding: 1rem;
     margin: 1rem;
     display: flex;
@@ -1788,18 +1812,18 @@ margin-bottom: 3rem;
 }
 
 .detail .mainContainer .one .images{
-    min-width: 90%;
+    width: 90%;
     margin: auto 1rem;
 }
 
 .detail .mainContainer .one .images .img1{
-    min-width: 100%;
+    width: 100%;
     height: 23rem;
     margin: 0px;
 }
 
 .detail .mainContainer .one .images .small{
-    min-width: 100%;
+    width: 100%;
     margin-top: 0.5rem;
     display: flex;
     justify-content: space-between;
@@ -1807,12 +1831,12 @@ margin-bottom: 3rem;
 }
 
 .detail .mainContainer .one .images .small img{
-    min-width: 9rem;
+    width: 9rem;
     height: 5rem;
 }
 
 .detail .mainContainer .two{
-    min-width: 45%;
+    width: auto;
 }
 
 .detail .mainContainer .two h3{
@@ -1821,13 +1845,13 @@ margin-bottom: 3rem;
 }
 
 .detail .mainContainer .two div{
-    min-width: 100%;
+    width: 100%;
     display: flex;
     text-align: justify;
 }
 
 .detail .mainContainer .two p{
-    min-width: 100%;
+    width: 100%;
     display: flex;
     text-align: justify;
 }
@@ -1865,7 +1889,7 @@ margin-bottom: 3rem;
 }
 
 .detail .mainContainer .two div.price span.unit{
-    min-width: 6rem;
+    width: 6rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1876,7 +1900,7 @@ margin-bottom: 3rem;
 }
 
 .detail .mainContainer .two div.price span.unit input{
-    min-width: 2rem;
+    width: 2rem;
     height: 100%;
     font-size: 20px;
     padding: auto;
@@ -1885,7 +1909,7 @@ margin-bottom: 3rem;
 }
 
 .detail .mainContainer .two div.price span.unit select{
-    min-width: 4rem;
+    width: 4rem;
     height: 100%;
     font-size: 20px;
     padding: 0px;
@@ -1918,7 +1942,7 @@ margin-bottom: 3rem;
 
 .detail .mainContainer .two .tab-text{
     padding: 1rem 0.5rem;
-    min-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -1949,7 +1973,7 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main{
-    min-width: 70%;
+    width: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
     display: flex;
@@ -1958,12 +1982,12 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form{
-    min-width: 57%;
+    width: auto;
     margin-bottom: 10rem;
 }
 
 .checkout main .main form .div{
-    min-width: 100%;
+    width: 100%;
     margin: 1.5rem 0rem;
 }
 
@@ -1974,7 +1998,7 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form .div p{
-    min-width: 97%;
+    width: 97%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -1983,7 +2007,7 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form .div .input-container{
-    min-width: 97%;
+    width: 97%;
     margin: 0rem;
     padding: 0rem;
     display: flex;
@@ -1992,7 +2016,7 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form .div .input-container .detail-form{
-    min-width: 45%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -2003,7 +2027,7 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form .div .input-container .detail-form .input-item{
-    min-width: 100%;
+    width: 100%;
     padding: 0rem;
     margin: 0rem;
     margin-bottom: 0.7rem;
@@ -2014,14 +2038,14 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form .div .input-container .detail-form .input-item input{
-    min-width: 95%;
+    width: 95%;
     padding: 0.5rem;
     background-color: rgb(241, 240, 240);
     border: 0.1px solid gray;
 }
 
 .checkout main .main form .div .input-container .detail-form .checkitem{
-    min-width: 93%;
+    width: 93%;
     margin-top: 1rem;
     flex-direction: row;
     justify-content: flex-start;
@@ -2034,13 +2058,13 @@ margin-bottom: 3rem;
 .checkout main .main form .div .input-container .detail-form .checkitem input{
     flex-direction: row;
     padding: 0rem;
-    min-width: auto;
+    width: auto;
     background-color: rgb(241, 240, 240);
     border: 0.1px solid gray;
 }
 
 .checkout main .main form .div .input-container .radio-item{
-    min-width: 93%;
+    width: 93%;
     margin-top: 1rem;
     flex-direction: row;
     justify-content: flex-start;
@@ -2055,7 +2079,7 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form .div .second-input-container .radio-item{
-    min-width: 95%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2071,7 +2095,7 @@ margin-bottom: 3rem;
 
 .checkout main .main form .div .second-input-container .radio-item .price-span{
     display: flex;
-    min-width: 40%;
+    width: 40%;
     justify-content: flex-end;
     align-items: center;
 }
@@ -2093,13 +2117,13 @@ margin-bottom: 3rem;
 
 .checkout main .main form .div .second-input-container .second-radio-item{
     flex-direction: column;
-    min-width: 95%;
+    width: 95%;
     height: auto;
     justify-content: space-between;
 }
 
 .checkout main .main form .div .second-input-container .second-radio-item div{
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -2116,7 +2140,7 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form .div .second-input-container .second-radio-item .card span input{
-    min-width: 90%;
+    width: 90%;
 }
 
 .checkout main .main form .div .second-input-container .second-radio-item .card input{
@@ -2127,7 +2151,7 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main form .div .second-input-container .second-radio-item .card .card-number #card-number{
-    min-width: 97%;
+    width: 97%;
 }
 
 .checkout main .main form .div .second-input-container .second-radio-item .card-info{
@@ -2168,13 +2192,13 @@ margin-bottom: 3rem;
 }
 
 .checkout main .main .section{
-    min-width: 40%;
+    width: auto;
     border: 1px solid gray;
     padding: 1rem;
 }
 
 .checkout main .main .section .orderSummary{
-    min-width: 100%;
+    width: 100%;
     padding: 0rem;
     margin: 0rem;
 }
@@ -2304,264 +2328,152 @@ margin-bottom: 3rem;
 
 
 /* Responsive styles for smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 750px) {
     body{
-        min-width: 100%;
+        width:100%;
     }
-    
+
     .container{
-        min-width: 90%;
-        margin: 0px;
-        height: auto; 
+        width:100%;
     }
-    
+
     header{
-        min-width: 100%;
+        width:100%;
+        height: auto;
+        overflow: hidden;
     }
-    
-    section{
-        min-width: 100%;
-        padding: max(3vh, 1rem);
+
+    header section{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
     }
-    
+
     header section .box{
-        min-width: 90%;
-        min-height: 100%;
-        margin: 0px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        justify-content: space-evenly;
     }
-    
-    .blue{
-        min-width: 90%;
-    }
-    
+
     header .blue .box select{
-        font-size: 0.9rem;
-        margin: 0px;
-        background-color: var(--blue-ten);
-        color: white;
-        border: none;
+        font-size: 0.5rem;
     }
     
     header .blue .box h1{
-        font-size: 0.9rem;
-        margin: 0px 30px;
+        font-size: 0.5rem;
+        margin: 0px;
     
     }
     
     header .blue a{
-        font-size: 0.9rem;
-        margin: 0px;
-        color: white;
-        text-decoration: none;
-    }
-    
-    header .white .box div{
-        min-width: fit-content;
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    header .white .box .logo img{
-        margin: 0px;
-        width: 45px;
-        margin-right: 10px;
-    }
-    
-    header .white .box .logo h1{
-        margin: 0px;
-        color: var(--blue-ten);
-        font-size: 2rem;
-        font-weight: 600;
-    }
-    
-    header .white .box .search{
-        border: 1px solid black;
-        padding: 0.3%;
-        border-radius: 4px;
-        margin: 0px 30px;
-    }
-    
-    header .white .box .search select{
-        margin: 0px;
-        border: none;
-        border-right: 1px solid black;
-        padding-right: 10px;
-        margin-right: 10px;
-    }
-    
-    header .white .box .search span{
-        width: 35ch;
-        margin: 0px;
-        border: none;
-        min-height: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    header .white .box .search span input{
-        margin: 0px;
-        border: none;
-        width: 35ch;
-        padding: 7px 0px;
-    }
-    
-    header .white .box .links{
-        width: 12%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    header .white .box .links a{
-        text-decoration: none;
-        color: grey;
-    }
-    
-    header .white .box .links a i{
-        margin-left: 3px;
-        position: relative;
-    }
-    
-    header .white .box .links a i sup{
-        padding: 5px 3px;
         font-size: 0.5rem;
-        line-height: 0px;
-        box-sizing: border-box;
-        border-radius: 10px;
-        background-color: var(--blue-ten);
-        position: absolute;
-        right: -3px;
-        top: -3px;
-    }
-    
-    header .white .box .btn{
         margin: 0px;
-        width: 17%;
+    }
+
+    header .web-white{
+        display: none;
+    }
+
+    header .mobile-white{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .mobile-white .box{
+        width: 100%;
+        padding:0px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+    }
+
+    header .mobile-white .box .logo .black-image{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 4px;
     }
     
-    header .white .box .btn button{
-        margin: 0px;
-        padding: max(0.5rem, 0.5rem) max(1rem, 1rem);
-        border: 1px solid black;
+    header .mobile-white .box .logo .black-name{
+        width: 12rem;
+        height: 3rem;
+    }
+    
+    header .mobile-white .box .menubtn{
+        margin:0px;
+    }
+    
+    header .mobile-white .box .menubtn .btn{
+        margin-right: 0px;
+        width: auto;
         background-color: white;
-        color: var(--blue-ten);
+        padding: none;
+        border: none;
+        font-size: 3.5rem;
     }
     
-    header .white .box .btn .login{
-        border: none;
-        background-color: var(--blue-ten);
-        color: white;
+    header .mobile-white #menuPopup{
+        display: flex;
+        z-index: 5;
     }
     
     footer{
-        width: 100%;
-        min-height: 60vh;
-        background-color: var(--blue-ten);
+        height: 60rem;
         margin: 0px;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        position: absolute;
-        color: white;
-        /* bottom: 0px; */
+        z-index: 5;
+        bottom: 0px;
         padding: max(0.9rem, 0.4rem);
-        box-sizing: border-box;
     }
     
     footer section{
         width: 90%;
         margin: 0px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
     }
     
-    footer section div{
-        width: fit-content;
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-    
     footer .first{
-        border-bottom: 1px solid white;
-        padding-bottom: 8rem;
+        height: auto;
+        border: none;
+        padding-bottom: 1rem;
         box-sizing: border-box;
     }
     
     footer section .logo{
-        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
-    
-    footer section .logo h1{
-    font-size: 30px;
-    }
-    
-    footer section .logo img{
-        border: 3px solid white;
-        margin: 0px;
-        margin-right: 20px;
-        width: 3rem;
-    }
-    
-    footer section .links{
-        flex-direction: column;
-    }
-    
-    footer section .links a{
-        color: white;
-        text-decoration: none;
-        margin: 5px 0px;
-    }
-    
+
     footer .second{
-        height: fit-content;
+        height: 10rem;
         padding: 0rem;
         margin: 0px;
-        margin-top: 2rem;
         line-height: 1rem;
         font-size: 0.7rem;
         position: relative;
+        display: flex;
+        flex-direction: column;
     }
     
     footer section .social{
-        min-width: 18%;
+        width: 40%;
         box-sizing: border-box;
         height: fit-content;
         display: flex;
         justify-content: space-between;
         margin: 0px;
         position: relative;
-        background-color: aquamarine;
     }
     
     footer section .social a{
-        min-width: 4rem;
-        min-height: 2.5rem;
+        width: 4rem;
+        height: 2.5rem;
         position: absolute;
         font-size: 1.5rem;
         color: var(--blue-ten);
-    }
-    
-    footer section .social a:nth-child(3n){
-        right: 0%;
-    }
-    
-    footer section .social a:nth-child(3n + 1){
-        left: 0%;
-    }
-    
-    footer section .social a:nth-child(3n + 2){
-        right: 35%;
     }
     
     :is(footer section .social a, footer section .payment a){
@@ -2574,7 +2486,7 @@ margin-bottom: 3rem;
     }
     
     footer section .payment{
-        min-width: 27%;
+        width: 60%;
         display: flex;
         justify-content: space-between;
         margin: 0px;
@@ -2584,45 +2496,32 @@ margin-bottom: 3rem;
     
     footer section .payment a{
         position: absolute;
-        min-width: 4rem;
-        min-height: 2.3rem;
+        width: 4rem;
+        height: 2.3rem;
     }
     
-    
-    footer section .payment a svg{
-        padding: 0px;
-        margin: 0px;
+    footer section #webCopy{
+        display: none;
     }
-    
-    footer section .payment a:nth-child(4n){
-        right: 0%;
-    }
-    
-    footer section .payment a:nth-child(4n + 1){
-        left: 0%;
-    }
-    
-    footer section .payment a:nth-child(4n + 2){
-        left: 27.5%;
-    }
-    
-    footer section .payment a:nth-child(4n + 3){
-        right: 27.5%;
+
+    footer section #mobileCopy{
+        display: block;
     }
     
     /* home page */
     .home main{
-        min-width: 100%;
+        width: 100%;
+        height: auto;
         margin: 0px;
         margin-top: 8rem;
-        margin-bottom: 10rem;
+        margin-bottom: 30rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     
     .home main section{
-        min-width: 90%;
+        width: 90%;
         margin: 0px auto;
         display: flex;
         flex-direction: column;
@@ -2631,515 +2530,170 @@ margin-bottom: 3rem;
     }
     
     .home main section .div{
-        min-width: 100%;
+        width: 100%;
         margin: 0px;
         display: flex;
         justify-content: space-evenly;
     }
     
     .home main .section-one{
-        height: 40rem;
-        margin: 0px 0px 4rem;
+        height: auto;
+        margin: 10px 0px 4rem;
     }
     
     .home main .section-one .div{
-        height: 35rem;
-        background-color: var(--blue-ten);
-        border-radius: 1rem;
-        color: white;
+        height: 110ch;
         display: flex;
+        flex-direction: column-reverse;
         justify-content: space-between;
-        align-items: center;
         margin-bottom: 2rem;
     }
     
     .home main section .div span{
-        height: 100%;
+        height: auto;
         margin: 0px auto;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-end;
     }
     
     .home main section .div span.text{
-        min-width: 20%;
-        margin-left: 5rem;
-    }
-    
-    .home main section .div span h1{
-        font-size: 5rem;
-        line-height: 5rem;
-        margin: 0px;
+        width: 80%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
         margin-bottom: 2rem;
     }
     
-    .home main section .div span button{
-        border: none;
-        color: black;
-        background: white;
-        padding: 1rem 3rem;
-        border-radius: 0.5rem;
-    }
-    
-    .home main section .div span button a{
-        text-decoration: none;
-        color: var(--blue-ten);
-    }
-    
-    .home main img{
-        min-width: 400px;
-        margin: 0px;
-    }
-    
     .home main section .div span.image{
-        min-width: 50%;
-        height: 100%;
+        width: 50%;
+        height: 50%;
         position: relative;
     }
     
     .home main section .div span.image span{
-        min-width: 80%;
-        height: 85%;
-        background-color: white;
-        border-radius: 15rem;
+        width: 22rem;
+        height: 22rem;
+        border-radius: 100rem;
         position: absolute;
-        top: 4rem;
-        right: 5rem;
+        top: 3rem;
+        right: -2rem;
     }
     
     .home main section .div span.image img{
-        min-width: 110%;
-        height: 90%;
+        width: 120%;
+        height: 23rem;
         position: absolute;
-        bottom: 0rem;
-        right: 0.1rem;
-    }
-    
-    .home main .section-one .dot i.blue-dot{
-        color: var(--blue-ten);
-    }
-    
-    .home main .section-one .dot i.gray-dot{
-        color: var(--grey-eight);
+        top: 3rem;
+        right: -1.5rem;
     }
     
     .home main .section-two{
         height: auto;
         margin: 2rem;
     }
+
+    .home main .section-two .mobile-dot{
+        display: none;
+    }
     
     .home main .section-two .div {
-        min-width: 100%;
+        width: 100%;
         margin: 0px;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 3rem;
     }
     
     .home main .section-two .div .item{
-        min-width: 31%;
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+        width: 80%;
     }
     
-    .home main .section-two .div .item .border{
-        min-width: 100%;
-        margin: 0px;
-        border: 1px solid black;
-        position: relative;
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .home main .section-two .div .item .border .bi-heart{
-        position: absolute;
-        font-size: 1.3rem;
-        right: 2rem;
-        top: 2rem;
-    }
-    
-    .home main .section-two .div .item .border img{
-        min-width: 97%;
-        height: 27rem;   
-    }
-    
-    .home main .section-two .div .item .border .dot{
-        position: absolute;
-        background-color: white;
-        color: var(--blue-ten);
-        border-radius: 2rem;
-        bottom: 12rem;
-    }
-    
-    .home main .section-two .div .item .border .name{
-        min-width: 96%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .home main .section-two .div .item .border .name .rating .yellow{
-        color: var(--yellow-two);
-    }
-    
-    .home main .section-two .div .item .border .name .rating .gray{
+    .home main .section-two .div .item .border .dot .gray{
         color: gray;
     }
-    
-    .home main .section-two .div .item .border .color-dot{
-        min-width: 96%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
-    .home main .section-two .div .item .border .color-dot .bord{
-        margin: 0px;
-        padding: 0.05px;
-        margin-right: 1px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center
-    }
-    
-    .home main .section-two .div .item .border .price{
-        min-width: 96%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0.5rem;
-    }
-    
-    .home main .section-two .div .item .border .price button{
-        background-color: var(--blue-ten);
-        border: none;
-        padding: 0.7rem 1.2rem;
-        border-radius: 0.2rem;
-    }
-    
-    .home main .section-two .div .item .border .price button a{
-        color: white;
-        text-decoration: none;
-        font-weight: 100;
-    }
-    
-    .home main .section-two .dot{
-    margin-bottom: 3rem;
-    }
-    
-    .home main .section-two .dot i.blue-dot{
-        color: var(--blue-ten);
-    }
-    
-    .home main .section-two .dot i.gray-dot{
-        color: var(--grey-eight);
-    }
-    
-    .home main .section-two .btn button{
-        background-color: var(--blue-ten);
-        border: none;
-        padding: 1rem 5rem;
-        border-radius: 0.5rem;
-    }
-    
-    .home main .section-two .btn button a{
-        color: white;
-        text-decoration: none;
-        font-weight: 100;
-        font-size: 1.5rem;
-        margin: 0px;
-        font-weight: 100;
-    }
-    
+
     .home main .section-three h1{
         font-size: 3rem;
     }
     
-    
+    .home main .section-three{
+        height: auto;
+    }
+
     .home main .section-three .filter{
-        min-width: 30%;
-        height: 4rem;
-        border-radius: 0.5rem;
-        background-color: var(--blue-ten);
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+
+    .home main .section-three .explore{
+        display: none;
+    }
+
+    .home main .section-three .mobileExplore{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
-    .home main .section-three .filter span{
-        min-width: 90%;
-        height: 95%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .home main .section-three .filter span a{
+     
+    .home main .section-three .mobileExplore a{
         color: white;
-        text-decoration: none;
-    }
-    
-    .home main .section-three .filter span a.active{
-        background-color: white;
-        color: var(--blue-ten);
-        padding: 0.7rem 1.7rem;
-        border-radius: 0.4rem;
-    }
-    
-    .home main .section-three .explore{
-        min-width: 95%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .home main .section-three .explore h3{
-        font-size: 1.6rem;
-    }
-    
-    .home main .section-three .explore a{
-        text-decoration: none;
-        color: var(--blue-ten);
-    }
-    
+        background-color: var(--blue-ten);
+        padding: 1rem 4rem;
+        border-radius: 0.5rem;
+    }   
     
     .home main .section-three .filter-items{
-        min-width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        flex-direction: column;
     }
     
     .home main .section-three .filter-items .item{
-        min-width: 32.5%;
-        margin: 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
-        -webkit-box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
-        -moz-box-shadow: 3px 0px 26px 1px rgba(56,56,56,1);
+        width: 75%;
+        margin-bottom: 2rem;
     }
     
-    .home main .section-three .filter-items .item .border{
-        min-width: 100%;
-        margin: 0px;
-        position: relative;
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .home main .section-three .filter-items .item .border .newDow{
+        top: 29rem;
     }
-    
-    .home main .section-three .filter-items .item .border .bi-heart{
-        position: absolute;
-        font-size: 1.3rem;
-        right: 2rem;
-        top: 2rem;
-    }
-    
-    .home main .section-three .filter-items .item .border img{
-        min-width: 97%;
-        height: 27rem;   
-    }
-    
-    .home main .section-three .filter-items .item .border .dot{
-        position: absolute;
-        background-color: white;
-        color: var(--blue-ten);
-        border-radius: 2rem;
-        bottom: 12rem;
-    }
-    
-    .home main .section-three .filter-items .item .border .dot i.blue-dot{
-        color: var(--blue-ten);
-    }
-    
-    .home main .section-three .filter-items .item .border .dot i.gray-dot{
-        color: var(--grey-eight);
-    }
-    
-    .home main .section-three .filter-items .item .border .name{
-        min-width: 96%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .home main .section-three .filter-items .item .border .name .rating .yellow{
-        color: var(--yellow-two);
-    }
-    
-    .home main .section-three .filter-items .item .border .name .rating .gray{
-        color: gray;
-    }
-    
-    .home main .section-three .filter-items .item .border .color-dot{
-        min-width: 96%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
-    .home main .section-three .filter-items .item .border .color-dot .bord{
-        margin: 0px;
-        padding: 0.05px;
-        margin-right: 1px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center
-    }
-    
-    .home main .section-three .filter-items .item .border .price{
-        min-width: 96%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0.5rem;
-    }
-    
-    .home main .section-three .filter-items .item .border .price button{
-        background-color: var(--blue-ten);
-        border: none;
-        padding: 0.7rem 1.2rem;
-        border-radius: 0.2rem;
-    }
-    
-    .home main .section-three .filter-items .item .border .price button a{
-        color: white;
-        text-decoration: none;
-        font-weight: 100;
-    }
-    
-    .home main .section-three .filter-items .item .border .dot{
-        position: absolute;
-        background-color: white;
-        color: var(--blue-ten);
-        border-radius: 2rem;
-        bottom: 5rem;
-    }
-    
-    .home main .section-three .filter-items .item .border .name{
-        min-width: 96%;
-        margin-top: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .home main .section-three .filter-items .item .border .name .rating .yellow{
-        color: var(--yellow-two);
-    }
-    
-    .home main .section-three .filter-items .item .border .name .rating .gray{
-        color: gray;
-    }
-    
-    .home main .section-three .filter-items .item .border .color-dot{
-        min-width: 96%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
-    .home main .section-three .filter-items .item .border .color-dot .bord{
-        margin: 0px;
-        padding: 0.05px;
-        margin-right: 1px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center
-    }
-    
-    .home main .section-three .filter-items .item .border .price{
-        min-width: 96%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 0.5rem;
-    }
-    
-    .home main .section-three .filter-items .item .border .price button{
-        background-color: var(--blue-ten);
-        border: none;
-        padding: 0.7rem 1.2rem;
-        border-radius: 0.2rem;
-    }
-    
-    .home main .section-three .filter-items .item .border .price button a{
-        color: white;
-        text-decoration: none;
-        font-weight: 100;
-    }
-    
-    
+
     .home main .section-four{
-        margin: 2rem 0px;
-        min-width: 100%;
-        height: 35rem;
-        background-color: var(--blue-ten);
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        margin: 2rem 0px 31rem;
+        width: 100%;
+        height: 70rem;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     
     .home main .section-four .image{
-        min-width: 70%;
-        height: 110%;
-        margin: 0px;
-        position: relative;
-        z-index: 2;
+        width: 100%;
+        height: 30%;
+        overflow: hidden;
     }
     
     
     .home main .section-four .image span{
-        min-width: 65rem;
-        height: 45rem;
-        background-color: white;
-        position: absolute;
-        left: -10rem;
-        top: 0.7rem;
-        -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 53% 65%, 7% 95%, 22% 57%, 2% 35%, 39% 35%);
-        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 53% 65%, 7% 95%, 22% 57%, 2% 35%, 39% 35%);
+        width: 100%;
+        height: 30rem;
+        left: 0rem;
+        top: 0rem;
     }
     
-    
     .home main .section-four .image img{
-        min-width: 35rem;
+        width: 70%;
         height: 95%;
         position: absolute;
         z-index: 2;
         top: 1.5rem;
         margin: 0px;
     }
-    
-    .home main .section-four .image img:nth-child(2n){
-        left: -1.5rem;
-    }
-    
-    
-    .home main .section-four .image img:nth-child(2n+1){
-        left:30%;
-    }
+
     .home main .section-four .text{
-        min-width: 35%;
+        width: 80%;
         margin-right: 5rem;
         height: 20rem;
         position: relative;
@@ -3148,19 +2702,20 @@ margin-bottom: 3rem;
     }
     
     .home main .section-four .text .input{
-        min-width: 100%;
+        width: 100%;
         padding: 0.7rem;
         margin: 0.7rem 0rem;
     }
     
     .home main .section-four .text span{
-        min-width: 50%;
+        width: 50%;
     }
     
     .home main .section-four .text span h1{
         font-size: 2rem;
         font-family: 100;
         margin: 0px;
+        width: 70%;
     }
     
     .home main .section-four .text span p{
@@ -3169,7 +2724,7 @@ margin-bottom: 3rem;
     }
     
     .home main .section-four .text .span{
-        min-width: 100%;
+        width: 100%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -3185,7 +2740,7 @@ margin-bottom: 3rem;
     }
     
     .home main .section-four .text button{
-        min-width: 100%;
+        width: 100%;
         padding: 0.7rem;
         margin: 0.7rem 0rem;
         background-color: var(--green-six);
@@ -3195,59 +2750,14 @@ margin-bottom: 3rem;
     
     /* policy page */
     .policy main{
-        min-width: 100%;
-        margin: 0px;
-        margin-top: 7rem;
-        margin-bottom: 3rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 60rem;
     }
-    
-    .policy main section{
-        min-width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: justify;
-    }
-    
-    .policy main section h1{
-        font-size: 2rem;
-        margin: 0.3rem 0rem;
-    }
-    
-    .policy main section h2{
-        font-size: 1.7rem;
-        margin: 0.1rem 0rem;
-    }
-    
-    .policy main section h3{
-        font-size: 1.5rem;
-        margin: 0.1rem 0rem;
-    }
-    
-    .policy main section ul{
-        padding: 0.5rem;
-    }
-    
-    .policy main section ul li{
-        margin: 0px;
-        list-style: none;
-    }
-    
-    
-    .policy main section ul li i{
-        color: gray;
-        margin-right: 10px;
-    }
-    
+
     /* about us page */
     
     .about main{
-        min-width: 100%;
+        width: 100%;
         margin: 0px;
         margin-top: 12rem;
         margin-bottom: 3rem;
@@ -3258,7 +2768,7 @@ margin-bottom: 3rem;
     }
     
     .about main section{
-        min-width: 90%;
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -3267,7 +2777,7 @@ margin-bottom: 3rem;
     }
     
     .about main section img{
-        min-width: 99%;
+        width: 99%;
         margin: 2rem 0rem;
     }
     
@@ -3301,11 +2811,11 @@ margin-bottom: 3rem;
     
     .about main section ul li h2{
         margin-right: 10px;
-        min-width: 100%;
+        width: 100%;
     }
     
     .about main section .div{
-        min-width: 100%;
+        width: 100%;
         height: 32.5rem;
         margin: 0px;
         display: flex;
@@ -3314,11 +2824,11 @@ margin-bottom: 3rem;
     }
     
     .about main section .div .frame{
-        min-width: 45%;
+        width: 45%;
     }
     
     .about main section .div form{
-        min-width: 45%;
+        width: 45%;
         height: 98%;
         display: flex;
         flex-direction: column;
@@ -3337,7 +2847,7 @@ margin-bottom: 3rem;
     }
     
     .about main section .div form span{
-        min-width: 100%;
+        width: 100%;
         margin: 0px;
         display: flex;
         justify-content: space-between;
@@ -3345,14 +2855,14 @@ margin-bottom: 3rem;
     }
     
     .about main section .div form span input{
-        min-width: 45%;
+        width: 45%;
         padding: 0.5rem;
         margin: 0px;
     }
     
     
     .about main section .div form .subject{
-        min-width: 96%;
+        width: 96%;
         padding: 0.5rem;
     }
     
@@ -3365,102 +2875,37 @@ margin-bottom: 3rem;
     }
     
     /* Error page */
-    .error main section{
-        flex-direction: column;
-        position: relative;
-        margin: 10rem 0rem;
-    }
-    
-    .error main section img{
-        min-width: 60%;
+    .error main{
+        height: 100rem;
     }
     
     .error main section h1{
-        color: var(--blue-eight);
-        font-size: 2rem;
-        font-weight: 900;
-        position: absolute;
-        z-index: 2;
-        bottom: 6rem;
-        left: 26rem;
-    }
-    
-    
-    .error main section button{
-        background-color: var(--blue-ten);
-        border: none;
-        padding: 0.9rem 3rem;
-        border-radius: 0.3rem;
-    }
-    
-    .error main section button a{
-        color: white;
-        text-decoration: none;
-    }
+        bottom: 3.5rem;
+        left: 12.5rem;
+    } 
     
     /* order complete page */
     .order main{
-        min-width: 100%;
-        margin: 12rem 0rem;
+        width: 100%;
+        margin: 0rem 0rem 50rem;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    
-    .order main section{
-        min-width: 97%;
-        margin: 0rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 60rem;
     }
     
     .order main section .div{
-        min-width: 50%;
-        height: 23rem;
         margin: 0rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        border: 0.2rem dotted gray;
+        width: 70%;
+        height: 30rem;
     }
     
     .order main section .div i{
-        font-size: 5.2rem;
-        background-color: var(--blue-ten);
-        color: white;
-        border-radius: 100%;
-        padding: 0px;
-        box-sizing: border-box;
-        height: 3rem;
-        min-width: 3rem;
-        position: absolute;
-        top: 2.3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        top: 4.7rem;
     }
     
     .order main section .div h1{
         font-size: 2.5rem;
-    }
-    
-    .order main section .div p{
-        text-align: center;
-        line-height: 2rem;
-    }
-    
-    .order main section .div button{
-        border: none;
-        background-color: var(--blue-ten);
-        padding: 0.7rem 2rem;
-    }
-    
-    .order main section .div button a{
-        text-decoration: none;
-        color: white;
     }
     
     /* Styling for the popup container */
@@ -3469,7 +2914,7 @@ margin-bottom: 3rem;
         position: absolute;
         top: -7rem;
         left: 15rem;
-        min-width: 70%;
+        width: 70%;
         height: auto;
         background-color: rgba(0, 0, 0, 0.7);
         justify-content: center;
@@ -3511,7 +2956,7 @@ margin-bottom: 3rem;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
-        min-width: 50%;
+        width: 50%;
         box-sizing: border-box;
     }
     
@@ -3527,7 +2972,7 @@ margin-bottom: 3rem;
     
     .or{
         height: 0.1rem;
-        min-width: 50%;
+        width: 50%;
         background-color: #040606;
         margin: 1rem 0rem;
         position: relative;
@@ -3550,7 +2995,7 @@ margin-bottom: 3rem;
     }
     
     .input{
-        min-width: 29rem;
+        width: 29rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -3561,14 +3006,14 @@ margin-bottom: 3rem;
     }
     
     .large input{
-        min-width: 97%;
+        width: 97%;
         padding: 0.5rem;
         margin-top: 3px;
         border-radius: 5px;
     }
     
     .large span.password{
-        min-width: 100%;
+        width: 100%;
         margin: 0px;
         display: flex;
         justify-content: space-between;
@@ -3589,7 +3034,7 @@ margin-bottom: 3rem;
     }
     
     .large span.number{
-        min-width: 100%;
+        width: 100%;
         margin: 0px;
         display: flex;
         justify-content: space-evenly;
@@ -3600,13 +3045,13 @@ margin-bottom: 3rem;
     }
     
     .large span.number select{
-        min-width: 10%;
+        width: 10%;
         height: 100%;
         margin: 0px;
     }
     
     .large span.number input{
-        min-width: 80%;
+        width: 80%;
         border: none;
     }
     
@@ -3640,7 +3085,7 @@ margin-bottom: 3rem;
     }
     
     #signupSucessPopup .popup-content .div{
-        min-width: 30%;
+        width: 30%;
         margin: 0rem;
         margin-top: 5rem;
         display: flex;
@@ -3658,7 +3103,7 @@ margin-bottom: 3rem;
         padding: 0px;
         box-sizing: border-box;
         height: 3rem;
-        min-width: 3rem;
+        width: 3rem;
         position: absolute;
         top: 1.5rem;
         display: flex;
@@ -3682,7 +3127,7 @@ margin-bottom: 3rem;
     }
     
     .pageTitle{
-        min-width: 100%;
+        width: 100%;
         height: 4rem;
         margin: 0px;
         margin-top: 10rem;
@@ -3693,7 +3138,7 @@ margin-bottom: 3rem;
     }
     
     .pageTitle .titleDiv{
-        min-width: 90%;
+        width: 90%;
         height: 10rem;
         display: flex;
         justify-content: space-between;
@@ -3727,670 +3172,61 @@ margin-bottom: 3rem;
     }
     
     /* shop page */
-    
-    .shop .filter{
-        min-width: 100%;
-        margin: 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-    
-    .shop .filter .filterDiv{
-        min-width: 90%;
-        margin: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
     .shop .filter .filterDiv h1{
-        min-width: 25%;
-        margin: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 1rem;
-    }
-    
-    .shop .filter .filterDiv .h1{
-        align-items: flex-start;
-        font-size: 1.2rem;
-    }
-    
-    .shop .filter .filterDiv h1 span{
-        min-width: 50%;
-        margin: 0px;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-end;
-    }
-    
-    .shop .filter .filterDiv h1 span p,
-    .shop .filter .filterDiv h1 span i{
-        margin: 0px;
-    }
-    
-    .shop .floatSort{
-        min-width: 25rem;
-        height: auto;
-        padding: 1rem 0.5rem 2rem;
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        box-shadow: 1px 1px 20px 1px black;
-        position: absolute;
-        top: -4px;
-        right: 5%;
-        display: none;
-    }
-    
-    .shop .floatSort span{
-        min-width: 90%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        color: rgb(82, 81, 81);
-        font-size: 1.2rem;
-        margin: 1rem auto;
-    }
-    
-    .shop .floatSort span.border{
-        justify-content: space-between;
-        border-bottom: 1px solid gray;
-    }
-    
-    .shop .floatSort span input{
-        min-width: 2rem;
-        height: 2rem;
-        margin-right: 2rem;
-    }
-    
-    .shop .floatSort button{
-        min-width: 90%;
-        height: 3rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1rem auto;
-        margin-top: 4rem;
-        background-color: var(--blue-ten);
-        color: white;
-        border: none;
-        border-radius: 3px;
+        width: 40%;
     }
     
     .shop .mainContainer{
-        min-width: 90%;
         height: auto;
-        margin: 1rem auto 3rem;
-        display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        margin-bottom: 60rem;
     }
     
     .shop .mainContainer aside{
-        min-width: 25%;
+        width: 35%;
         margin: 0px;
-        /* background-color: #0052CC; */
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
     }
-    
-    .shop .mainContainer aside ul{
-        padding: 0rem;
-    }
-    
-    .shop .mainContainer aside ul li{
-        list-style: none;
-        padding: 0.3rem 2.8rem;
-        border: 1px solid gray;
-        margin: 0rem 0rem 1rem;
-    }
-    
-    .shop .mainContainer aside fieldset{
-        min-width: 90%;
-        height: auto;
-        margin: 1rem 0rem;
-        padding: 0rem 2rem;
-        box-sizing: border-box;
-    }
-    
-    .shop .mainContainer aside fieldset div{
-        min-width: 100%;
-    }
-    
-    .shop .mainContainer aside fieldset div h4{
-        min-width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .shop .mainContainer aside fieldset ul{
-        border-top: 1px solid var(--grey-three);
-        min-width: 100%;
-        margin: 0px;
-        padding: 0rem;
-        display: none;
-    }
-    
-    .shop .mainContainer aside fieldset ul li{
-        padding: 0px;
-        min-width: 100%;
-        margin: 0.1rem 0rem;
-        border: none;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    
-    }
-    
-    .shop .mainContainer aside fieldset ul li input{
-        min-width: 1.5rem;
-        height: 1.5rem;
-        margin-right: 0.5rem;
-    }
-    
-    .shop .mainContainer aside fieldset ul li p{
-        font-size: 1rem;
-    }
-    
+
     .shop .mainContainer main{
-        min-width: 75%;
+        width: 100%;
         margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .shop .mainContainer main .grid-container{
-        padding: 1rem;
-        --min-column-size: 30%;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
     }
     
     .shop .mainContainer main .grid-container .grid-item{
-        border: 1px solid black;
-        height: auto;
-        position: relative;
-        text-align: center;
-        padding: 0.5rem;
+        width: 70%;
+        height: 30rem;
+        margin: auto;
+
     }
-    
-    .shop .mainContainer main .grid-container .grid-item img{
-        min-width: 100%;
-        height: 20rem;
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item .ri-heart-line{
-        position: absolute;
-        right: 1.5rem;
-        top: 1.5rem;
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item span{
-        min-width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 0px;
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item span.dot{
-        justify-content: center;
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item .text span{
-        min-width: 40%;
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item .text span.rating .yellow{
-        color: var(--yellow-four);
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item span.color{
-        justify-content: start;
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item span i{
-        color: gray;
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item span .blue-dot{
-        color: var(--blue-ten);
-    }
-    
-    .shop .mainContainer main .grid-container .grid-item span a{
-        background-color: var(--blue-ten);
-        color: white;
-        text-decoration: none;
-        padding: 0.5rem 0.7rem;
-    }
-    
     
     /* product detail page */
     .detail .mainContainer{
-        min-width: 80%;
-        margin-bottom: 20rem;
+        height: 70rem;
+        margin-bottom: 70rem;
     }
-    
-    .detail .mainContainer .one{
-        min-width: 50%;
-        padding: 1rem;
-        margin: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .detail .mainContainer .one .images{
-        min-width: 90%;
-        margin: auto 1rem;
-    }
-    
-    .detail .mainContainer .one .images .img1{
-        min-width: 100%;
-        height: 23rem;
-        margin: 0px;
-    }
-    
-    .detail .mainContainer .one .images .small{
-        min-width: 100%;
-        margin-top: 0.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .detail .mainContainer .one .images .small img{
-        min-width: 9rem;
-        height: 5rem;
-    }
-    
-    .detail .mainContainer .two{
-        min-width: 45%;
-    }
-    
-    .detail .mainContainer .two h3{
-        font-size: 2rem;
-        font-weight: 300;
-    }
-    
-    .detail .mainContainer .two div{
-        min-width: 100%;
-        display: flex;
-        text-align: justify;
-    }
-    
-    .detail .mainContainer .two p{
-        min-width: 100%;
-        display: flex;
-        text-align: justify;
-    }
-    
-    .detail .mainContainer .two div.review .rating{
-        margin-right: 1rem;
-    }
-    
-    .detail .mainContainer .two div.review .rating .yellow{
-        color: var(--yellow-four);
-    }
-    
-    .detail .mainContainer .two div.review a{
-        color: gray;
-    }
-    
-    .detail .mainContainer .two div.price{
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 3rem;
-    }
-    
-    .detail .mainContainer .two div.price span{
-        line-height: 0px;
-    }
-    
-    .detail .mainContainer .two div.price span h3{
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-    
-    .detail .mainContainer .two div.price span p{
-        font-size: 0.8rem;
-        font-weight: 100;
-    }
-    
-    .detail .mainContainer .two div.price span.unit{
-        min-width: 6rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 2rem;
-        border: 1px solid black;
-        border-radius: 0.4rem;
-        overflow: hidden;
-    }
-    
-    .detail .mainContainer .two div.price span.unit input{
-        min-width: 2rem;
-        height: 100%;
-        font-size: 20px;
-        padding: auto;
-        margin: 0px;
-        border: none;
-    }
-    
-    .detail .mainContainer .two div.price span.unit select{
-        min-width: 4rem;
-        height: 100%;
-        font-size: 20px;
-        padding: 0px;
-        margin: 0px;
-        border: none;
-    }
-    
-    .detail .mainContainer .two div.price button{
-        border: none;
-        background-color: var(--blue-ten);
-        padding: 0.6rem 1.3rem;
-        color: white;
-        border-radius: 0.3rem;
-    }
-    
-    .detail .mainContainer .two div.tab-heading{
-        justify-content: space-between;
-        border-bottom: 1px solid black;
-        margin-top: 3rem;
-    }
-    
-    .detail .mainContainer .two div.tab-heading h4{
-        padding: 1rem 2rem 1rem;
-        margin: 0px;
-    }
-    
-    .detail .mainContainer .two div.tab-heading h4.active{
-        border-bottom: 3px solid var(--blue-ten);
-    }
-    
-    .detail .mainContainer .two .tab-text{
-        padding: 1rem 0.5rem;
-        min-width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .detail .mainContainer .two .tab-text span,
-    .detail .mainContainer .two .tab-text p{
-        margin:  0rem  0rem 0.5rem;
-    }
-    
-    .detail .mainContainer .two .tab-text p{
-        margin-bottom: 1.9rem;
-    }
-    
-    .detail .mainContainer .two .link{
-        border: none;
-        text-decoration: none;
-        background-color: var(--blue-ten);
-        padding: 0.8rem 1.9rem;
-        color: white;
-        margin: 0rem;
-        border-radius: 0.3rem;
-    }
-    
+
+    /* checkout detail page */
     .checkout main{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        height: 150rem;
+        margin-top: 7rem;
+        margin-bottom: 65rem;
     }
-    
+
     .checkout main .main{
-        min-width: 70%;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    .checkout main .main form{
-        min-width: 57%;
-        margin-bottom: 10rem;
-    }
-    
-    .checkout main .main form .div{
-        min-width: 100%;
-        margin: 1.5rem 0rem;
-    }
-    
-    
-    .checkout main .main form .div h1{
-        font-size: 1.4rem;
-        margin: 5px 0px;
-    }
-    
-    .checkout main .main form .div p{
-        min-width: 97%;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        color: gray;
-        margin: 5px 0px 20px;
-    }
-    
-    .checkout main .main form .div .input-container{
-        min-width: 97%;
-        margin: 0rem;
-        padding: 0rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-    
-    .checkout main .main form .div .input-container .detail-form{
-        min-width: 45%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin: 0px;
-        padding: 0rem;
-        padding-right: 0.5rem;
-    }
-    
-    .checkout main .main form .div .input-container .detail-form .input-item{
-        min-width: 100%;
-        padding: 0rem;
-        margin: 0rem;
-        margin-bottom: 0.7rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
-    .checkout main .main form .div .input-container .detail-form .input-item input{
-        min-width: 95%;
-        padding: 0.5rem;
-        background-color: rgb(241, 240, 240);
-        border: 0.1px solid gray;
-    }
-    
-    .checkout main .main form .div .input-container .detail-form .checkitem{
-        min-width: 93%;
-        margin-top: 1rem;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-color: rgb(241, 240, 240);
-        border: 0.1px solid gray;
-        padding: 0.5rem;
-    }
-    
-    .checkout main .main form .div .input-container .detail-form .checkitem input{
-        flex-direction: row;
-        padding: 0rem;
-        min-width: auto;
-        background-color: rgb(241, 240, 240);
-        border: 0.1px solid gray;
-    }
-    
-    .checkout main .main form .div .input-container .radio-item{
-        min-width: 93%;
-        margin-top: 1rem;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        background-color: rgb(241, 240, 240);
-        border: 0.1px solid gray;
-        padding: 0.5rem;
-    }
-    
-    .checkout main .main form .div .second-input-container{
         flex-direction: column;
     }
-    
-    .checkout main .main form .div .second-input-container .radio-item{
-        min-width: 95%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        height: auto;
-    }
-    
-    .checkout main .main form .div .second-input-container .radio-item span{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .checkout main .main form .div .second-input-container .radio-item .price-span{
-        display: flex;
-        min-width: 40%;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    .checkout main .main form .div .second-input-container .radio-item .price-span p span{
-        margin-right: 0.7rem;
-    }
-    
-    .checkout main .main form .div .second-input-container .radio-item #radio{
-        margin-right: 0.7rem;
-    }
-    
-    .checkout main .main form .div .second-input-container .second-radio-item{
-        min-width: 95%;
-    }
-    
-    .checkout main .main form .div .second-input-container .second-radio-item div{
-        min-width: 100%;
-    }
-    
-    .checkout main .main form .div .second-input-container .second-radio-item .card{
-        margin-top: 2rem;
-    }
-    
-    .checkout main .main form .div .second-input-container .second-radio-item .card span input{
-        min-width: 90%;
-    }
-    
-    .checkout main .main form .div .second-input-container .second-radio-item .card input{
-        padding: 0.3rem;
-    }
-    
-    .checkout main .main form .div .second-input-container .second-radio-item .card .card-number #card-number{
-        min-width: 97%;
-    }
-    
-    .checkout main .main form .div .second-input-container .second-radio-item .card-info{
-        margin-top: 2rem;
-    }
-    
-    .checkout main .main form .div .agree{
-        padding: 0.5rem 0.1rem;
-        margin: 0rem;
-        margin-top: 0.5rem;
-    }
-    
-    .checkout main .main form .div .agree input{
-        border: 0.1px solid gray;
-    }
-    
-    .checkout main .main form .btn{
-        padding: 0.7rem 2rem;
-        margin: 2rem 0rem;
-    }
-    
-    .checkout main .main .section{
-        min-width: 40%;
-        padding: 1rem;
-    }
-    
-    .checkout main .main .section .orderSummary{
-        min-width: 100%;
-        padding: 0rem;
-        margin: 0rem;
-    }
-    
-    .checkout main .main .section .orderSummary #p{
-        font-size: 0.72rem;
-    }
-    
-    .checkout main .main .section .orderSummary .div{
-        margin: 2rem 0rem;
-    }
-    
-    .checkout main .main .section .orderSummary .div #span{
-        width: 70%;
-    }
-    
-    .checkout main .main .section .orderSummary .div #span h6{
-        font-size: 1rem;
-        margin: 0rem;
-        line-height: 0rem;
-    }
-    
-    .checkout main .main .section .orderSummary .div #span #di{
-        width: 50%;
-        font-size: 0.7rem;
-    }
-    
-    .checkout main .main .section .orderSummary .div #span .rating{
-
-        font-size: 0.7rem;
-    }
-    
-    .checkout main .main .section .orderSummary .div #price h4{
-        font-size: 1rem;
-    }
-    
-    .checkout main .main .section .orderSummary .div #price p{
-
-        font-size: 0.7rem;
-    }
-
-    
-    .checkout main .main .section .orderSummary .div img{
-        width: 4rem;
-        height: 3rem;
-    }
-    
-    .checkout main .main .section .orderSummary .div #div span{
-        width: 6rem;
-
-    }
-    
-    .checkout main .main .section .orderSummary .div #div span input,
-    .checkout main .main .section .orderSummary .div #div span select{
-        width: 2.9rem;
-        height: 1.5rem;
-    }
-    
     
 }
 
